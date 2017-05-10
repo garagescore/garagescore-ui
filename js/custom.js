@@ -32,3 +32,16 @@
 		input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
 	});
 }( document, window, 0 ));
+
+
+
+$(document).ready(function() {
+    $('.js-scrollTo').on('click', function() {
+        var control = $(this).attr('href');
+        var inputs = $(this).attr('href');
+        var buttons = $(this).attr('href');
+        var speed = 750;
+        $('html, body').animate( { scrollTop: $(control).offset().top }, { scrollTop: $(inputs).offset().top }, { scrollTop: $(buttons).offset().top }, speed );
+        return false;
+    });
+});

@@ -128,6 +128,79 @@ color : white !important;
 .box .dark + label:hover {
     color: #8c3844;
 }
+
+/*********************Bouttons**********************/
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-3d {
+	display: block;
+	background: #5cbcf6;
+	outline: 1px solid transparent;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.btn-3d:active {
+	background: #55b7f3;
+}
+.btn-3d-1 {
+	background: #fff;
+	color: #999;
+}
+
+.btn-3d-1:active {
+	background: #fff;
+}
+.btn-3d-1:after,
+.btn-3d-1:before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.btn-3d-1:after {
+	top: -98%;
+	background: #219ab5;
+	color: #FFF;
+    font :  1em "Roboto Regular";
+    line-height: 30px;
+	content: 'Save';
+	-webkit-transform-origin: 0% 100%;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform-origin: 0% 100%;
+	-moz-transform: rotateX(90deg);
+	-ms-transform-origin: 0% 100%;
+	-ms-transform: rotateX(180deg);
+	transform-origin: 0% 100%;
+	transform: rotateX(90deg);
+}
+.btn-3d-1.btn-default-3d:hover {
+	background: #CCC;
+    color: #FFF;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-transform: rotateX(-90deg) translateY(100%);
+	-moz-transform-origin: 50% 100%;
+	-moz-transform: rotateX(-90deg) translateY(100%);
+	-ms-transform-origin: 50% 100%;
+	-ms-transform: rotateX(-90deg) translateY(100%);
+	transform-origin: 50% 100%;
+	transform: rotateX(-90deg) translateY(100%);
+}
 .btn-default.dark {
 	font :  1em "Roboto Regular";
 	color: #FFF;
@@ -170,6 +243,7 @@ color : white !important;
 	color: #FFF;
 	background-color: #219ab5;
 	border: solid 2px #219ab5;
+    transition-duration: 0.4s;
 }
 .btn-info.dark:hover {
 	background: rgba( 33, 154, 181, 0);
@@ -181,11 +255,15 @@ color : white !important;
 	border: solid 2px #219ab5;
 	color: #FFF;
 }
+.btn-info.dark:after {
+    transition: all 0.8s;
+}
 .btn-warning.dark {
 	background: rgba( 164, 72, 82, 0);
 	color: #A44852;
 	border: solid 2px #A44852;
 	padding: 1em 1.5em;
+    transition-duration: 0.4s;
 }
 .btn-warning.dark span {
   	font :  1em "Roboto Regular";
@@ -196,6 +274,7 @@ color : white !important;
   	position: absolute;
   	opacity: 0;
   	top: 0;	
+    transition: all 0.8s;
 }
 .btn-warning.dark:hover {
 	background: rgba( 164, 72, 82, 1);
@@ -223,6 +302,7 @@ color : white !important;
 	font :  1em "Roboto Regular";
 	border: solid 2px #0d6eb2;
     color: #0d6eb2;
+    transition-duration: 0.4s;
 }
 .btn-success.dark:hover {
 	background: rgba( 13, 110, 178, 1);
@@ -235,6 +315,43 @@ color : white !important;
 }
 .btn-success.dark:focus {
 	background-color: #0d6eb2;
+	color: #FFF;
+}
+.btn-danger.dark {
+	font :  1em "Roboto Regular";
+	color: #FFF;
+	background-color: #D60000;
+	border: none;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.4s;
+}
+.btn-danger.dark:hover {
+	background-color: #A82720;
+	color: #FFF;
+	font :  1em "Roboto Regular";
+	border: none;
+}
+.btn-danger.dark:after {
+	content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -1.5em !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.btn-danger.dark:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+.btn-danger.dark:focus {
+	background-color: #D60000;
 	color: #FFF;
 }
 input[type="radio"].dark, input[type="radio"].dark:after {
@@ -486,7 +603,7 @@ pre.pre-scrollable {
     background-image : linear-gradient(90deg, #FFF, #FFF);
     color: #A1A9BF;
     border-radius: 40% 0 0 40%;
-    padding: .5rem .5rem .5rem .0rem;
+    padding: 0 .5rem 0 .5rem;
     border-right: 2px;
 }
 .input-group-addon.remove.dark {
@@ -558,6 +675,7 @@ ul {
    right: 0;
    position: fixed;
    top: 45vh;
+    z-index: 1000;
 }
 .sticky-social.dark li {
     margin-bottom: 15px;

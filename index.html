@@ -5,12 +5,12 @@
 	<title>CSS . Garagescore</title>
 	<meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="./css/custom.css">
-  	<link rel="stylesheet" href="./css/style.css">
-  	<link rel="stylesheet" href="./css/font-awesome.min.css">
+  	<link rel="stylesheet" href="../css/custom.css">
+  	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 </head>
 <body id="gs-dbo">
 	<header class="affix">
@@ -148,7 +148,7 @@
 		<pre class="gs-color">
 &lt;button type="button" class="btn btn-success dark">Créer un nouveau garage&lt;button&gt;
 		</pre>
-		<button type="button" class="btn btn-danger">Delete / Résilier</button>
+		<button type="button" class="btn btn-danger dark">Delete / Résilier</button>
 		<br><br>	
 		<pre class="gs-color">
 &lt;button type="button" class="btn btn-danger">Delete&lt;button&gt;
@@ -158,6 +158,12 @@
 		<pre class="gs-color">
 &lt;button type="button" class="btn btn-warning dark"&gt;&lt;span&gt;Renommer garage sur bime&lt;span&gt;&lt;button&gt;
 		</pre>
+        <h2>Boutton 3D</h2>
+            <button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder</button>
+        <br><br>
+        <pre class="pre-scrollable gs-color">
+&lt;button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder&lt;button>
+        </pre>
     </div><!--.bs-docs-section-->
     <div class="bs-docs-section" id="buttons-pagination">
         <h2>Pagination</h2>
@@ -554,10 +560,13 @@ commodo consequat.
         </pre>
     </div><!--.bs-docs-section-->
     <div class="bs-docs-section">
+        
+    </div><!--.bs-docs-section-->
+    <div class="bs-docs-section">
         <aside class="sticky-social dark">
         <ul>
-            <li><a href="#" class="entypo-facebook dark" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="./icons/ic-widget.png" ></a></li>
-            <li><a href="#" class="entypo-twitter dark" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="./icons/ic-certificat.png" ></a></li>
+            <li><a href="#" class="entypo-facebook dark" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="../icons/ic-widget.png" ></a></li>
+            <li><a href="#" class="entypo-twitter dark" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="../icons/ic-certificat.png" ></a></li>
         </ul>
 </aside>
     </div>
@@ -568,33 +577,33 @@ commodo consequat.
                 <li class=""> 
                     <a href="#Inputs">Inputs</a> 
                     <ul class="nav"> 
-                        <li class=""><a href="#inputs-input-groups">Input groups</a></li> 
-                        <li class=""><a href="#inputs-input">Input</a></li> 
-                        <li class=""><a href="#inputs-textarea">Textarea</a></li> 
-                        <li class=""><a href="#inputs-basic-block">Basic block</a></li> 
-                        <li class=""><a href="#inputs-file-input">File input</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#inputs-input-groups">Input groups</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#inputs-input">Input</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#inputs-textarea">Textarea</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#inputs-basic-block">Basic block</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#inputs-file-input">File input</a></li> 
                     </ul> 
                 </li> 
                 <li class=""> 
                     <a href="#Buttons">Buttons</a> 
                     <ul class="nav"> 
-                        <li class=""><a href="#buttons-basic-button">Basic Button</a></li> 
-                        <li class=""><a href="#buttons-pagination">Pagination</a></li> 
-                        <li class=""><a href="#buttons-radio">Radio</a></li> 
-                        <li class=""><a href="#buttons-checkBoxes">CheckBoxes</a></li> 
-                        <li class=""><a href="#buttons-switch-button">Switch button</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#buttons-basic-button">Basic Button</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#buttons-pagination">Pagination</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#buttons-radio">Radio</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#buttons-checkBoxes">CheckBoxes</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#buttons-switch-button">Switch button</a></li> 
                     </ul> 
                 </li>
                 <li class=""> 
                     <a href="#Control">Control</a> 
                     <ul class="nav"> 
-                        <li class=""><a href="#control-select">Select</a></li> 
-                        <li class=""><a href="#control-navbar">navbar</a></li> 
-                        <li class=""><a href="#control-accordion">Accordion</a></li> 
-                        <li class=""><a href="#control-table">Table</a></li> 
-                        <li class=""><a href="#control-attractive-rounded-input">Attractive Rounded input</a></li>
-                        <li class=""><a href="#control-typography">Typography</a></li>
-                        <li class=""><a href="#control-footer">Footer</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#control-select">Select</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#control-navbar">navbar</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#control-accordion">Accordion</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#control-table">Table</a></li> 
+                        <li class=""><a class="js-scrollTo" href="#control-attractive-rounded-input">Attractive Rounded input</a></li>
+                        <li class=""><a class="js-scrollTo" href="#control-typography">Typography</a></li>
+                        <li class=""><a class="js-scrollTo" href="#control-footer">Footer</a></li> 
                     </ul> 
                 </li>
             </ul> 
