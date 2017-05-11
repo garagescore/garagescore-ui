@@ -1,39 +1,24 @@
-/*
-hr {
-    height: 2px;
-    background-color:#CCC;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 98%;
-}
-
-label, span{
-	color: #219ab5;
-}
-*/
 .gs-color{
 	color: #219ab5;
 }
 .gs-white {
 	color : #FFF;
 }
-.dark-h3 {
+.darkbo-h3 {
 	color :#CCC;
 	font :   "Roboto Regular";
 }
-.form-control.dark, pre.dark {
+.darkbo .form-control, .form-control.darkbo, .darkbo figure pre, pre.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	color :#FFF;
 	font :  1em "Roboto Regular";
-
 	border : 2px solid #414968;
-
     -moz-border-radius : 5px;
 	-webkit-border-radius : 5px;
 	-o-border-radius : 5px;
 }
 
-.input-group-addon.dark {
+.darkbo .input-group-addon, .input-group-addon.darkbo {
 	padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
@@ -44,24 +29,28 @@ label, span{
     border : 2px solid #414968;
     border-radius: 4px;
 }
-input.form-control.dark:focus, textarea.form-control.dark:focus {
+.darkbo .form-control:focus, .form-control.darkbo:focus {
 	background-image: linear-gradient(0deg, #FFF, #FFF);
+}
+.darkbo select:focus {
+    background-image : linear-gradient(90deg, #272B42, #414968)!important;
+}
+.darkbo .form-control:focus, form-control.darkbo:focus {
     color: #A1A9BF;
 }
-
-.dark::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
 color : white !important;
 }
  
-.dark:-moz-placeholder {
+input:-moz-placeholder {
 color : white !important;  
 }
  
-.dark::-moz-placeholder {
+input::-moz-placeholder {
 color : white !important;  
 }
  
-.dark:-ms-input-placeholder {  
+input:-ms-input-placeholder {  
 color : white !important;  
 }
 
@@ -78,7 +67,7 @@ color : white !important;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,0.5); 
 }
-.form-group.dark{
+.form-group.darkbo{
 	padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
@@ -89,7 +78,7 @@ color : white !important;
     border : 2px solid #414968;
     border-radius: 4px;
 }
-.js .box .dark {
+.js .box .form-control {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -97,7 +86,7 @@ color : white !important;
     position: absolute;
     z-index: -1;
 }
-.form-control.dark + label {
+.darkbo .box .form-control + label, .box .form-control.darkbo + label {
     max-width: 80%;
     font-size: 1.25rem;
     font-weight: 700;
@@ -110,12 +99,12 @@ color : white !important;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
 }
-.form-control.dark:focus + label,
-.box .dark.has-focus + label {
+.darkbo .form-control, .form-control.darkbo:focus + label,
+.darkbo .box .form-control.has-focus + label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px;
 }
-.form-control.dark + label svg {
+.darkbo .form-control + label svg, .form-control.darkbo + label svg {
     width: 1em;
     height: 1em;
     vertical-align: middle;
@@ -123,9 +112,9 @@ color : white !important;
     margin-top: -0.25em;
     margin-right: 0.25em;
 }
-.box .dark:focus + label,
-.box .dark.has-focus + label,
-.box .dark + label:hover {
+.darkbo .box .form-control:focus + label,
+.darkbo .box .form-control.has-focus + label,
+.darkbo .box .form-control + label:hover {
     color: #8c3844;
 }
 
@@ -201,7 +190,7 @@ color : white !important;
 	transform-origin: 50% 100%;
 	transform: rotateX(-90deg) translateY(100%);
 }
-.btn-default.dark {
+.darkbo .btn-default, .btn-default.darkbo {
 	font :  1em "Roboto Regular";
 	color: #FFF;
 	background-color: #32c4c4;
@@ -210,13 +199,13 @@ color : white !important;
     position: relative;
     transition-duration: 0.4s;
 }
-.btn-default.dark:hover {
+.darkbo .btn-default:hover, .btn-default.darkbo:hover {
 	background-color: #21a39f;
 	color: #FFF;
 	font :  1em "Roboto Regular";
 	border: none;
 }
-.btn-default.dark:after {
+.darkbo .btn-default:after, .btn-default.darkbo:after {
 	content: "";
     background: #f1f1f1;
     display: block;
@@ -228,96 +217,96 @@ color : white !important;
     opacity: 0;
     transition: all 0.8s;
 }
-.btn-default.dark:active:after {
+.darkbo .btn-default:active:after, .btn-default.darkbo:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
 }
-.btn-default.dark:focus {
+.darkbo .btn-default:focus, .btn-default.darkbo:focus {
 	background-color: #32c4c4;
 	color: #FFF;
 }
-.btn-info.dark {
+.darkbo .btn-info, .btn-info.darkbo {
 	font :  1em "Roboto Regular";
 	color: #FFF;
 	background-color: #219ab5;
 	border: solid 2px #219ab5;
     transition-duration: 0.4s;
 }
-.btn-info.dark:hover {
+.darkbo .btn-info:hover, .btn-info.darkbo:hover {
 	background: rgba( 33, 154, 181, 0);
 	border: solid 2px #219ab5;
 	color: #219ab5;
 }
-.btn-info.dark:focus {
+.darkbo .btn-info:focus, .btn-info.darkbo:focus {
 	background-color: #219ab5;
 	border: solid 2px #219ab5;
 	color: #FFF;
 }
-.btn-info.dark:after {
+.darkbo .btn-info:after, .btn-info.darkbo:after {
     transition: all 0.8s;
 }
-.btn-warning.dark {
+.darkbo .btn-warning, .btn-warning.darkbo {
 	background: rgba( 164, 72, 82, 0);
 	color: #A44852;
 	border: solid 2px #A44852;
 	padding: 1em 1.5em;
     transition-duration: 0.4s;
 }
-.btn-warning.dark span {
+.darkbo .btn-warning span, .btn-warning.darkbo span {
   	font :  1em "Roboto Regular";
   	display: inline-block;
   	position: relative;
 }
-.btn-warning.dark span:after {
+.darkbo .btn-warning span:after, .btn-warning.darkbo span:after {
   	position: absolute;
   	opacity: 0;
   	top: 0;	
     transition: all 0.8s;
 }
-.btn-warning.dark:hover {
+.darkbo .btn-warning:hover, .btn-warning.darkbo:hover {
 	background: rgba( 164, 72, 82, 1);
 	border: solid 2px #A44852;
 }
-.btn-warning.dark:hover span {
+.darkbo .btn-warning:hover span, .btn-warning.darkbo:hover span {
   	color: #FFF;
 }
-.btn-warning.dark:hover span:after {
+.darkbo .btn-warning:hover span:after, .btn-warning.darkbo:hover span:after {
   	opacity: 1;
   	right: 0;
 }
-.btn-warning.dark:focus {
+.darkbo .btn-warning:focus, .btn-warning.darkbo:focus {
 	background: rgba( 164, 72, 82, 1);
 	border: solid 2px #A44852;
 	color: #FFF;
 }
-.btn-warning.dark:focus:active {
+.darkbo .btn-warning:focus:active, .btn-warning.darkbo:focus:active {
 	background: rgba( 164, 72, 82, 1);
 	border: solid 2px #A44852;
     color: #A44852;
 }
-.btn-success.dark {
+.darkbo .btn-success, .btn-success.darkbo {
 	background: rgba( 13, 110, 178, 0);
 	font :  1em "Roboto Regular";
 	border: solid 2px #0d6eb2;
     color: #0d6eb2;
     transition-duration: 0.4s;
 }
-.btn-success.dark:hover {
+.darkbo .btn-success:hover, .btn-success.darkbo:hover {
 	background: rgba( 13, 110, 178, 1);
 	border: solid 2px #0d6eb2;
 	color: #FFF;
 }
-.btn-success.dark:focus:active {
+.darkbo .btn-success:focus:active, .btn-success.darkbo:focus:active {
 	background-color: #0d6eb2;
 	color: #FFF;
 }
-.btn-success.dark:focus {
+.darkbo .btn-success:focus, .btn-success.darkbo:focus {
 	background-color: #0d6eb2;
 	color: #FFF;
 }
-.btn-danger.dark {
+.darkbo .btn-danger, .btn-danger.darkbo {
 	font :  1em "Roboto Regular";
 	color: #FFF;
 	background-color: #D60000;
@@ -326,13 +315,13 @@ color : white !important;
     position: relative;
     transition-duration: 0.4s;
 }
-.btn-danger.dark:hover {
+.darkbo .btn-danger:hover, .btn-danger.darkbo:hover {
 	background-color: #A82720;
 	color: #FFF;
 	font :  1em "Roboto Regular";
 	border: none;
 }
-.btn-danger.dark:after {
+.darkbo .btn-danger:after, .btn-danger.darkbo:after {
 	content: "";
     background: #f1f1f1;
     display: block;
@@ -344,22 +333,22 @@ color : white !important;
     opacity: 0;
     transition: all 0.8s;
 }
-.btn-danger.dark:active:after {
+.darkbo .btn-danger:active:after, .btn-danger.darkbo:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s;
 }
-.btn-danger.dark:focus {
+.darkbo .btn-danger:focus, .btn-danger.darkbo:focus {
 	background-color: #D60000;
 	color: #FFF;
 }
-input[type="radio"].dark, input[type="radio"].dark:after {
+.darkbo input[type="radio"], input[type="radio"].darkbo, .darkbo input[type="radio"]:after, input[type="radio"].darkbo:after {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
    border-radius: 100%;
 }
-.toggle.dark {
+.darkbo .toggle, .toggle.darkbo {
   float:left;
   width: 20px;
   height: 20px;
@@ -386,15 +375,15 @@ input[type="radio"].dark, input[type="radio"].dark:after {
   box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.2);
 }
 
-.toggle.dark:hover {
+.darkbo .toggle:hover, .toggle.darkbo:hover {
     cursor: pointer;
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.3);
 }
 
-.toggle.dark:checked {
+.darkbo .toggle:checked, .toggle.darkbo:checked {
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.4);
 }
-.toggle.dark:after {
+.darkbo .toggle:after, .toggle.darkbo:after {
     content: '';
     text-shadow: 0 -1px 0 #bfbfbf;
     position: relative;
@@ -407,75 +396,68 @@ input[type="radio"].dark, input[type="radio"].dark:after {
     border-radius: 100%;
 }
 
-.toggle.dark:checked:after {
+.darkbo .toggle:checked:after, .toggle.darkbo:checked:after {
     color: #85ada7;
     text-shadow: 0 1px 0 #669991;
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.2);
     background: #FFF;
     border: solid 1px #219ab5;
 }
-.panel-default.dark {
+.darkbo .panel-default, .panel-default.darkbo {
 	background-color: #FFF;
 }
-.panel-heading.dark {
+.darkbo .panel-heading, .panel-heading.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968) !important;
 }
-.panel-title.dark {
+.darkbo .panel-title, .panel-title.darkbo {
 	color: #FFF;	
 }
-a.dark[data-toggle="collapse"] {
+.darkbo a[data-toggle="collapse"] {
 	line-height: 1;
 	color: #FFF;
 	text-decoration: none;
 }
-a.dark[data-toggle="collapse"] i:after {
+.darkbo a[data-toggle="collapse"] i:after {
 	content: '\f0d7';
 	margin-left: 10px;
 }
-
-a.dark[aria-expanded="true"] i:after {
+.darkbo a[aria-expanded="true"] i:after {
 	content: '\f0da';
 	margin-left: 10px;
 }
-.panel-heading .glyphicon-menu-down.dark {
-	margin-left: 10px;
-}
-.panel-heading .glyphicon-menu-down.dark {
-	margin-left: 10px;
-}
-.badge.dark {
+.darkbo .badge, .badge.darkbo {
 	background-color: #FFF !important;
 	color: #219ab5 !important;
 	font-weight: 600;
 }
-.panel-collapse {
+.darkbo .panel-collapse {
 	background-color: #CCC;
 }
-.panel-body.dark {
+.darkbo .panel-body, .panel-body.darkbo {
 	color: #219ab5;
 	background-color: #FFF;
 }
-.panel-heading.dark h3{
+.panel-heading.darkbo h3{
 	color: #FFF;
 }
-select.form-control.dark:focus option {
+.darkbo select.form-control:focus option, select.form-control.darkbo:focus option {
 	color: #219ab5;
 	font :  1em "Roboto Regular";
 }
 pre.pre-scrollable {
 	max-height: 200px;
 }
-.pagination.dark a {
+.darkbo .pagination a, .pagination.darkbo a {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	margin: 2px;
 }
-.nav-tabs.dark {
+.darkbo .nav-tabs, .nav-tabs.darkbo {
 	background-color: #000;
 	font :  1em "Roboto Regular";
 	line-height: 1;
 	border-bottom: 2px solid #FFF;
 }
-.dropdown-toggle.dark {
+.darkbo .dropdown-toggle, .dropdown-toggle.darkbo {
 	transition: all 0.4s;
 	color: #0d6eb2;
 	font :  1em "Roboto Regular";
@@ -485,62 +467,62 @@ pre.pre-scrollable {
   	padding: 18px 10px;
   	margin: 0 10px; 	
 }
-.dropdown-toggle.dark:hover {
+.darkbo .dropdown-toggle:hover, .dropdown-toggle.darkbo:hover {
 	background-color: #272b42;
 	color: #FFF;
 	border: none;
 	border-radius: 0px;
 	padding: 18px 10px;
 }
-.dropdown-toggle.dark:focus {
+.darkbo .dropdown-toggle:focus, .dropdown-toggle.darkbo:focus {
 	background-color: #FFF;
 	border: none;
 	border-radius: 0px;
 }
-.dropdown-toggle.dark:active {
+.darkbo .dropdown-toggle:active, .dropdown-toggle.darkbo:active {
 	background-color: #219ab5;
 	border: none;
 	border-radius: 0px;
 }
-.dropdown-toggle.dark:focus:hover {
+.darkbo .dropdown-toggle:focus:hover, .dropdown-toggle.darkbo:focus:hover {
 	color: #219ab5;
 	border: none;
 	border-radius: 0px;
 }
-.dropdown-menu.dark li a {
+.darkbo .dropdown-menu li a, .dropdown-menu.darkbo li a {
 	padding: 8px;
 	color: #0d6eb2;
 	font :  1em "Roboto Regular";
 	font-weight: 600;
 	border: none;
 }
-.dropdown-menu.dark li a:hover {
+.darkbo .dropdown-menu li a:hover, .dropdown-menu.darkbo li a:hover {
 	color: #219ab5;
 }
-.table.dark {
+.darkbo .table, .table.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	color: #FFF;
 }
-[class="switch dark"]:not(:checked),
-[class="switch dark"]:checked {
+.darkbo [class="switch"]:not(:checked), .darkbo [class="switch"]:checked, [class="switch darkbo"]:not(:checked),
+[class="switch darkbo"]:checked {
   position: absolute;
   opacity: 0.01;
 }
-[class="switch dark"]:not(:checked) + label,
-[class="switch dark"]:checked + label {
+.darkbo [class="switch"]:not(:checked) + label, .darkbo [class="switch"]:checked + label, [class="switch darkbo"]:not(:checked) + label,
+[class="switch darkbo"]:checked + label {
   position: relative;
   padding-left: 4.5em;
   cursor: pointer;
 }
-[class="switch dark"]:not(:checked) + label:before,
-[class="switch dark"]:checked + label:before,
-[class="switch dark"]:not(:checked) + label:after,
-[class="switch dark"]:checked + label:after {
+.darkbo [class="switch"]:not(:checked) + label:before, [class="switch darkbo"]:not(:checked) + label:before,
+.darkbo [class="switch"]:checked + label:before, [class="switch darkbo"]:checked + label:before,
+.darkbo [class="switch"]:not(:checked) + label:after, [class="switch darkbo"]:not(:checked) + label:after,
+.darkbo [class="switch"]:checked + label:after, [class="switch darkbo"]:checked + label:after {
   content: '';
   position: absolute;
 }
-[class="switch dark"]:not(:checked) + label:before,
-[class="switch dark"]:checked + label:before {
+.darkbo [class="switch"]:not(:checked) + label:before, [class="switch darkbo"]:not(:checked) + label:before,
+.darkbo [class="switch"]:checked + label:before, [class="switch darkbo"]:checked + label:before {
   left: 0; top: -.1em;
   width: 4em; height: 1.85em;
   border-radius: 1em;
@@ -551,27 +533,27 @@ pre.pre-scrollable {
   background: -ms-linear-gradient(top, #414968 0%, #272b42 100%);
   background: linear-gradient(top, #414968 0%, #272b42 100%);
 }
-[class="switch dark"]:not(:checked) + label:after,
-[class="switch dark"]:checked + label:after {
+.darkbo [class="switch"]:not(:checked) + label:after, [class="switch darkbo"]:not(:checked) + label:after,
+.darkbo [class="switch"]:checked + label:after, [class="switch darkbo"]:checked + label:after {
   width: 1.4em; height: 1.4em;
   transition: all .2s;
   border-radius: 50%;
   background: #A44852;
   top: .12em; left: .24em;
 }
-[class="switch dark"]:checked + label:before {
+.darkbo [class="switch"]:checked + label:before, [class="switch darkbo"]:checked + label:before {
   box-shadow: 0px 0px 2px 2px rgba(33, 154, 181, 0.4);
 }
-[class="switch dark"]:not(:checked) + label:before {
+[class="switch"]:not(:checked) + label:before, [class="switch darkbo"]:not(:checked) + label:before {
   box-shadow: 0px 0px 2px 2px rgba(164, 72, 82, 0.4);
 }
-[class="switch dark"]:checked + label:after {
+.darkbo [class="switch"]:checked + label:after, [class="switch darkbo"]:checked + label:after {
   background: #FFF;
   left: 2.4em;
 }
-[class="switch dark"]:checked + label .ui,
-[class="switch dark"]:not(:checked) + label .ui:before,
-[class="switch dark"]:checked + label .ui:after {
+.darkbo [class="switch"]:checked + label .ui, [class="switch darkbo"]:checked + label .ui,
+.darkbo [class="switch"]:not(:checked) + label .ui:before, [class="switch darkbo"]:not(:checked) + label .ui:before,
+.darkbo [class="switch"]:checked + label .ui:after, [class="switch darkbo"]:checked + label .ui:after {
   position: absolute;
   left: .6em;
   width: 6em;
@@ -580,33 +562,33 @@ pre.pre-scrollable {
   font-weight: bold;
   transition: all .2s;
 }
-[class="switch dark"]:not(:checked) + label .ui:before {
+.darkbo [class="switch"]:not(:checked) + label .ui:before, [class="switch darkbo"]:not(:checked) + label .ui:before {
   left: 2.35em;
   top: .2em;
   color: #FFF;
 }
-[class="switch dark"]:checked + label .ui:after {
+.darkbo [class="switch"]:checked + label .ui:after, [class="switch darkbo"]:checked + label .ui:after {
   top: .2em;
   left: .2em;
   color: #FFF;
   line-height: 1.5;
 }
-[class="switch dark"]:focus + label:before {
+.darkbo [class="switch"]:focus + label:before, [class="switch darkbo"]:focus + label:before {
   box-sizing: border-box;
   margin-top: -1px;
 }
-.form-inline.dark .form-group {
+.darkbo .form-inline .form-group, .form-inline.darkbo .form-group {
 	border-bottom: 2px solid #CCC;
 	padding: 10px;
 }
-.input-group-addon.add.dark {
+.darkbo .input-group-addon.add, .input-group-addon.add.darkbo {
     background-image : linear-gradient(90deg, #FFF, #FFF);
     color: #A1A9BF;
     border-radius: 40% 0 0 40%;
     padding: 0 .5rem 0 .5rem;
     border-right: 2px;
 }
-.input-group-addon.remove.dark {
+.darkbo .input-group-addon.remove, .input-group-addon.remove.darkbo {
     background-image : linear-gradient(90deg, #FFF, #FFF);
     color: #414968;
     border-radius: 0 100% 100% 0;
@@ -614,21 +596,21 @@ pre.pre-scrollable {
     border-left: 0px;
     cursor: pointer;
 }
-.form-control.add.dark {
+.darkbo .form-control.add, .form-control.add.darkbo {
     background-image : linear-gradient(90deg, #FFF, #FFF);
     color: #A1A9BF;
     border-radius: 0;
     border-right: 0;
     padding: 1rem 0 1rem 0;
 }
-input.form-control.add.dark:focus {
+.darkbo input.form-control.add:focus, input.form-control.add.darkbo:focus {
 	border: 2px solid #414968;
     border-right: 0;
 }
-.form-control.marques.dark {
+.darkbo .form-control.marques, .form-control.marques.darkbo {
     border-left: 0px;
 }
-.form-control.add.marques.dark:focus {
+.darkbo .form-control.add.marques:focus, .form-control.add.marques.darkbo:focus {
     border-left: 0;
 }
 .footer {
@@ -671,16 +653,16 @@ ul {
    margin: 0;
    padding: 0;
 }
-.sticky-social.dark {
+.darkbo .sticky, .sticky-social.darkbo {
    right: 0;
    position: fixed;
    top: 45vh;
     z-index: 1000;
 }
-.sticky-social.dark li {
+.darkbo .sticky li, .sticky.darkbo li {
     margin-bottom: 15px;
 }
-.sticky-social.dark a {
+.darkbo .sticky a, .sticky.darkbo a {
     color: #fff;
     display: block;
     height: 45px;
@@ -689,7 +671,7 @@ ul {
     line-height: 45px;
     width: 45px;
 }
-.sticky-social.dark a span {
+.darkbo .sticky a span, .sticky.darkbo a span {
     line-height: 18px;
     left: 120px;
     position: absolute;
@@ -701,14 +683,13 @@ ul {
     padding: 5px 0 5px 15px;
 }
 
-.sticky-social.dark a:hover span {
-   left: -345px;
+.darkbo .sticky a:hover span, .sticky.darkbo a:hover span {
+    left: -345px;
 }
-.sticky-social.dark a[class*="facebook"],
-.sticky-social.dark a[class*="facebook"]:hover,
-.sticky-social.dark a[class*="facebook"] span { background: #A44852; border-radius: 5px 0 0 5px; }
+.darkbo .sticky a[class="widget"], .sticky.darkbo a[class="widget"],
+.darkbo .sticky a[class="widget"]:hover, .sticky.darkbo a[class="widget"]:hover,
+.darkbo .sticky a[class="widget"] span, .sticky.darkbo a[class="widget"] span { background: #A44852; border-radius: 5px 0 0 5px; }
 
-.sticky-social.dark a[class*="twitter"],
-.sticky-social.dark a[class*="twitter"]:hover,
-.sticky-social.dark a[class*="twitter"] span { background: #A44852; border-radius: 5px 0 0 5px; }
-
+.darkbo .sticky a[class="certificat"], .sticky.darkbo a[class="certificat"],
+.darkbo .sticky a[class="certificat"]:hover, .sticky.darkbo a[class="certificat"]:hover,
+.darkbo .sticky a[class="certificat"] span, .sticky.darkbo a[class="certificat"] span { background: #A44852; border-radius: 5px 0 0 5px; }
