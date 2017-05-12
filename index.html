@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr" class="js">
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
 	<title>CSS . Garagescore</title>
 	<meta charset="utf-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/darkbo.css">
-  	<link rel="stylesheet" href="showcase/showcase.css">  
+  	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src=".js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/darkbo.css"/>
+  	<link rel="stylesheet" href="showcase/showcase.css"/> 
 </head>
 <body class="darkbo" id="gs-dbo">
 	<header class="affix">
@@ -18,42 +19,51 @@
 	<div class="container bs-docs-container">
 	<div class="row">
 	<div class="col-md-9">
-        <h1 id="Inputs">Inputs</h1>
+    <h1 id="Inputs">Inputs</h1>
+        
 	<div class="bs-docs-section">
+        
 		<h2 id="anchor-2">Input groups</h2>
 		<div class="input-group">
   			<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-search"></i></span>
-  			<input type="text" class="form-control darkbo" placeholder="Search.." aria-describedby="basic-addon1">
+  			<input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon1">
 		</div>
 		<br>
         <pre class="pre-scrollable gs-color">
 &lt;div class="input-group">
-&lt;span class="input-group-addon darkbo" id="basic-addon1"&gt;&lt;i class="glyphicon glyphicon-search"&gt;&lt;i&gt;&lt;span&gt;
-&lt;input type="text" class="form-control darkbo" placeholder="Search.." aria-describedby="basic-addon1"&gt;
-&lt;div&gt;
+&lt;span class="input-group-addon" id="basic-addon1"&gt;&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon1"/&gt;
+&lt;/div&gt;
         </pre>
-	</div><!--.col-md-6-->
+        
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="inputs-input">
+        
 		<h2>Input</h2>
 		<p>
 			Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.
 		</p>
-		<input type="text" class="form-control darkbo" placeholder="Text input">
+		<input type="text" class="form-control" placeholder="Text input">
         <br>
         <pre class="pre-scrollable gs-color">
-&lt;input type="text" class="form-control darkbo" placeholder="Text input"&gt;
+&lt;input type="text" class="form-control" placeholder="Text input"/&gt;
         </pre>
 
-	</div>
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="inputs-textarea">
+        
 		<h2>Textarea</h2>
 		<p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
 		<textarea class="form-control" rows="3"></textarea>
 		<br>
 		<pre class="gs-color">
-&lt;textarea class="form-control darkbo" rows="3"&gt;&lt;textarea&gt;
+&lt;textarea class="form-control" rows="3"&gt;&lt;textarea&gt;
 		</pre>
-	</div><!--.col-md-6-->
+        
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="inputs-basic-block">
 		<h2>Basic block</h2>
 		<p>Use <code>pre</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
@@ -82,7 +92,8 @@
 }
 }
         </pre>
-        <pre class="pre-scrollable gs-color">&lt;pre&gt;
+        <pre class="pre-scrollable gs-color">
+&lt;pre class="pre-scrollable gs-color">
 {
 *_reference* *generic_xls_mmddyyyy*;
 "foreigns" {
@@ -107,9 +118,11 @@
 }
 &lt;/pre&gt;
 		</pre>
-	</figure>
-	</div><!--.col-md-6-->
+        
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="inputs-file-input">
+        
 		<h2>File input</h2>
 		<div class="box">
 			<input type="file" name="file" id="file" class="form-control"/>
@@ -117,38 +130,40 @@
 		</div>
 		<pre class="pre-scrollable gs-color">
 &lt;div class="box"&gt;
-&lt;input type="file" name="file" id="file" class="form-control darkbo"&gt;
-&lt;label for="file"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">&lt;path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>&lt;svg&gt; &lt;span>Choose a file&hellip;&lt;span>&lt;label&gt;
-&lt;div&gt;
+&lt;input type="file" name="file" id="file" class="form-control"/&gt;
+&lt;label for="file"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">&lt;path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>&lt;/svg&gt; &lt;span>Choose a file&hellip;&lt;/span>&lt;/label&gt;
+&lt;/div&gt;
 		</pre>
-	</div><!--.col-md-6-->
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="buttons-basic-button">
+        
         <h1 id="Buttons">Buttons</h1>
 		<h2>Basic Buttons</h2>
 		<button type="button" class="btn btn-default">Créer / Save</button>
 		<br><br>	
-		<pre class="gs-color">
-&lt;button type="button" class="btn btn-default darkbo">Sauvegarder&lt;button&gt;
+		<pre class="pre-scrollable gs-color">
+&lt;button type="button" class="btn btn-default">Sauvegarder&lt;/button&gt;
 		</pre>
 		<button type="button" class="btn btn-info">Rechercher</button>
 		<br><br>	
-		<pre class="gs-color">
-&lt;button type="button" class="btn btn-info darkbo">Rechercher&lt;button&gt;
+		<pre class="pre-scrollable gs-color">
+&lt;button type="button" class="btn btn-info">Rechercher&lt;/button&gt;
 		</pre>
 		<button type="button" class="btn btn-success">Créer un nouveau garage</button>
 		<br><br>	
-		<pre class="gs-color">
-&lt;button type="button" class="btn btn-success darkbo">Créer un nouveau garage&lt;button&gt;
+		<pre class="pre-scrollable gs-color">
+&lt;button type="button" class="btn btn-success">Créer un nouveau garage&lt;/button&gt;
 		</pre>
 		<button type="button" class="btn btn-danger">Delete / Résilier</button>
 		<br><br>	
-		<pre class="gs-color">
-&lt;button type="button" class="btn btn-danger">Delete&lt;button&gt;
+		<pre class="pre-scrollable gs-color">
+&lt;button type="button" class="btn btn-danger">Delete&lt;/button&gt;
 		</pre>
 		<button type="button" class="btn btn-warning"><span>Renommer garage sur bime</span></button>
 		<br><br>	
-		<pre class="gs-color">
-&lt;button type="button" class="btn btn-warning darkbo"&gt;&lt;span&gt;Renommer garage sur bime&lt;span&gt;&lt;button&gt;
+		<pre class="pre-scrollable gs-color">
+&lt;button type="button" class="btn btn-warning"&gt;&lt;span&gt;Renommer garage sur bime&lt;/span&gt;&lt;/button&gt;
 		</pre>
         <h2>Boutton 3D</h2>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder</button>
@@ -156,21 +171,27 @@
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Créer un nouveau garage</button>
         <br>
         <pre class="pre-scrollable gs-color">
-&lt;button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder&lt;button>
+&lt;button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder&lt;/button>
         </pre>
         <h2>Icons</h2>
         <br>
-        <div class="hi-icon-effect-3 hi-icon-effect-3b">
-            <a href="#" class="hi-icon icon-information"><i class="fa" aria-hidden="true"></i></a>
-            <a href=""><label>Informations</label></a>
-            <a href="#" class="hi-icon icon-branchement"><i class="fa" aria-hidden="true"></i></a>
-            <a href=""><label>Branchement</label></a>
-            <a href="#" class="hi-icon icon-parametrage"><i class="fa" aria-hidden="true"></i></a>
-            <a href=""><label>Paramétrage</label></a>
+        <div class="darkbo-icon darkbo-icon-1">
+            <a href="#" class="effet-1 icon-information"><i class="fa" aria-hidden="true"></i></a>
+            <a href="#" class="effet-1 icon-branchement"><i class="fa" aria-hidden="true"></i></a>
+            <a href="#" class="effet-1 icon-parametrage"><i class="fa" aria-hidden="true"></i></a>
         </div>
-        
+        <br>
+        <pre class="pre-scrollable gs-color">
+&lt;div class="darkbo-icon darkbo-icon-1">
+&lt;a href="#" class="effet-1 icon-information">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
+&lt;a href="#" class="effet-1 icon-branchement">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
+&lt;a href="#" class="effet-1 icon-parametrage">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
+&lt;/div>           
+        </pre>
     </div><!--.bs-docs-section-->
+        
     <div class="bs-docs-section" id="buttons-pagination">
+        
         <h2>Pagination</h2>
 		<nav aria-label="...">
 		<ul class="pagination">
@@ -183,20 +204,24 @@
 		    <li><a href="#">&raquo;</a></li>
 		</ul>
 		</nav>
-  		<pre class="gs-color">
-&lt;ul class="pagination darkbo"&gt;
-&lt;li class="disabled"&gt;&lt;a href="#" aria-label="Previous"&gt;&lt;span aria-hidden="true"&gt;& laquo;&lt;span&gt;&lt;a&gt;&lt;li&gt;span&gt;& laquo;&lt;a&gt;&lt;li&gt;
-&lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;a&gt;&lt;li&gt;
-&lt;li&gt;&lt;a href="#"&gt;2&lt;a&gt;&lt;li&gt;
-&lt;li&gt;&lt;a href="#"&gt;3&lt;a&gt;&lt;li&gt;
-&lt;li&gt;&lt;a href="#"&gt;4&lt;a&gt;&lt;li&gt;
-&lt;li&gt;&lt;a href="#"&gt;5&lt;a&gt;&lt;li&gt;
-&lt;li&gt;&lt;a href="#"&gt;&raquo;&lt;a&gt;&lt;li&gt;
-&lt;ul&gt; 			
+  		<pre class="pre-scrollable gs-color">
+&lt;nav aria-label="...">
+&lt;ul class="pagination">
+&lt;li class="disabled">&lt;a href="#" aria-label="Previous">&lt;span aria-hidden="true">&laquo;&lt;/span>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#">1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#">2&lt;/a>&lt;/li>
+&lt;i class="active">&lt;a href="#">3&lt;/a>&lt;/li>
+&lt;i>&lt;a href="#">4&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#">5&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#">&raquo;&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>			
   		</pre>
+        
 	</div><!--.bs-docs-section-->
 
 	<div class="bs-docs-section" id="buttons-radio">
+        
 		 <h1>Radio</h1>
 		<input type="radio" name="abc" class="toggle" checked="checked">
 		<input type="radio" name="abc" class="toggle">
@@ -206,9 +231,11 @@
 		<pre class="pre-scrollable gs-color">
 &lt;input type="radio" name="abc" class="toggle darkbo" checked="checked"&gt;
 		</pre>
-	</div><!--.col-md-6-->
+        
+	</div><!--.bs-docs-section-->
 	
-	<div class="bs-docs-section" id="buttons-checkBoxes">	
+	<div class="bs-docs-section" id="buttons-checkBoxes">
+        
 		<h1>CheckBoxes</h1>
 		<input type="checkbox" class="toggle">
 		<input type="checkbox" class="toggle">
@@ -216,16 +243,19 @@
 		<input type="checkbox" class="toggle" checked="checked">
 		<br><br>
 		<pre class="pre-scrollable gs-color">
-&lt;input type="checkbox" class="toggle darkbo"&gt;
+&lt;input type="checkbox" class="toggle"/&gt;
 		</pre>
-	</div><!--.col-md-6-->
+        
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="buttons-switch-button">
+        
 		<h2>Switch button</h2>
   		<p><input  type="checkbox" class="switch" id="test1"><label for="test1"><span class="ui"></span><span class="text">Activer mode maintenance</span></label></p>
   		<p><input  type="checkbox" class="switch" id="test2"  checked="checked"><label for="test2"><span class="ui"></span><span class="text">Déactiver mode maintenance</span></label></p>
   		<br>
   		<pre class="pre-scrollable gs-color">
-&lt;p>&lt;input type="checkbox" id="test1">&lt;label for="test1">&lt;span class="ui">&lt;span>&lt;span class="text">Activer mode maintenance&lt;span>&lt;label>&lt;p> 		
+&lt;p>&lt;input type="checkbox" id="test1">&lt;label for="test1">&lt;span class="ui">&lt;/span>&lt;span class="text">Activer mode maintenance&lt;/span>&lt;/label>&lt;/p> 		
   		</pre>
 	</div>
 	<div class="bs-docs-section" id="control-select">
@@ -237,13 +267,16 @@
 		</select>
 		<br>
 		<pre class="pre-scrollable gs-color">
-&lt;select class="form-control darkbo"&gt;
-&lt;option&gt;Ajouter un garage&lt;option&gt;
-&lt;option&gt;2&lt;option&gt;
-&lt;select&gt;			
+&lt;select class="form-control"&gt;
+&lt;option&gt;Ajouter un garage&lt;/option&gt;
+&lt;option&gt;2&lt;/option&gt;
+&lt;/select&gt;			
 		</pre>
-	</div><!--.col-md-6-->
+        
+	</div><!--.bs-docs-section-->
+        
 	<div class="bs-docs-section" id="control-navbar">
+        
         <h2>Navbar</h2>
 		<ul class="nav nav-tabs">
 			<li role="presentation" class="dropdown">
@@ -281,40 +314,40 @@
 		</ul>
 		<br>
 		<pre class="pre-scrollable gs-color">
-&lt;ul class="nav nav-tabs darkbo">
-&lt;li role="presentation" class="dropdown darkbo">
-&lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+&lt;ul class="nav nav-tabs">
+&lt;li role="presentation" class="dropdown">
+&lt;a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Garages
-&lt;a>
-&lt;li>
-&lt;li role="presentation" class="dropdown darkbo">
+&lt;/a>
+&lt;/li>
+&lt;li role="presentation" class="dropdown">
 &lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-Emails &lt;span class="caret">&lt;span>
-&lt;a>
-&lt;ul class="dropdown-menu darkbo">
-&lt;li>&lt;a href="">Test de la génération...&lt;a>&lt;li>
-&lt;li role="separator" class="divider">&lt;li>
-&lt;li>&lt;a href="">Gestion des contacts&lt;a>&lt;li>
-&lt;li role="separator" class="divider">&lt;li>
-&lt;li>&lt;a href="">Non-contactables&lt;a>&lt;li>
-&lt;ul>
-&lt;li>
-&lt;li role="presentation" class="dropdown darkbo">
+Emails &lt;span class="caret">&lt;/span>
+&lt;/a>
+&lt;ul class="dropdown-menu">
+&lt;li>&lt;a href="">Test de la génération...&lt;/a>&lt;/li>
+&lt;li role="separator" class="divider">&lt;/li>
+&lt;li>&lt;a href="">Gestion des contacts&lt;/a>&lt;/li>
+&lt;li role="separator" class="divider">&lt;/li>
+&lt;li>&lt;a href="">Non-contactables&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li role="presentation" class="dropdown">
 &lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Campagnes
-&lt;a>
-&lt;li>
-&lt;li role="presentation" class="dropdown darkbo">
+&lt;/a>
+&lt;/li>
+&lt;li role="presentation" class="dropdown">
 &lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Avis
-&lt;a>
-&lt;li>
-&lt;li role="presentation" class="dropdown darkbo">
-&lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+&lt;/a>
+&lt;/li>
+&lt;li role="presentation" class="dropdown">
+&lt;a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Rapports
-&lt;a>
-&lt;li>
-&lt;ul>
+&lt;/a>
+&lt;/li>
+&lt;/ul>
 		</pre>
 	</div>
 	<div class="bs-docs-section" id="control-accordion">
@@ -397,53 +430,56 @@ Rapports
 &lt;div class="panel panel-default"&gt;
 &lt;div class="panel-heading"&gt;
 &lt;h4 class="panel-title">
-&lt;label>Compte de facturation 1&lt;label&gt;
+&lt;label>Compte de facturation 1&lt;/label&gt;
 &lt;div class="pull-right">
-&lt;span class="label label-pill label-default">6&lt;span&gt;
-&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse1"&gt;abonnements actifs >&lt;a&gt;
+&lt;span class="label label-pill label-default">6&lt;/span&gt;
+&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse1"&gt;abonnements actifs >&lt;/a&gt;
 &lt;br>
-&lt;div>
-&lt;h4>
-&lt;div>
+&lt;/div>
+&lt;/h4>
+&lt;/div>
 &lt;div id="collapse1" class="panel-collapse collapse"&gt;
 &lt;div class="panel-body"&gt;
 &lt;div class="col-md-12"&gt;
-&lt;label>Garage 1&lt;label&gt;
-&lt;span>Abonnement#223 Créer le 19/04/2017&lt;span&gt;
-&lt;div&gt;
+&lt;label>Garage 1&lt;/label&gt;
+&lt;span>Abonnement#223 Créer le 19/04/2017&lt;/span&gt;
+&lt;/div&gt;
 &lt;div class="col-md-12"&gt;
-&lt;label>Garage 1&lt;label&gt;
-&lt;span>Abonnement#224 résilié le 19/04/2017&lt;span&gt;
-&lt;div&gt;
-&lt;div&gt;
-&lt;div&gt;
-&lt;div&gt;
+&lt;label>Garage 1&lt;/label&gt;
+&lt;span>Abonnement#224 résilié le 19/04/2017&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="panel panel-default"&gt;
 &lt;div class="panel-heading"&gt;
 &lt;h4 class="panel-title"&gt;
-&lt;label>Compte de facturation 2&lt;label&gt;
+&lt;label>Compte de facturation 2&lt;/label&gt;
 &lt;div class="pull-right"&gt;
-&lt;span class="label label-pill label-default"&gt;6&lt;span&gt;
-&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse2"&gt; abonnements actifs  >&lt;a&gt;
+&lt;span class="label label-pill label-default"&gt;6&lt;/span&gt;
+&lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse2"&gt; abonnements actifs>&lt;/a&gt;
 &lt;br&gt;
-&lt;div&gt;
-&lt;h4&gt;
-&lt;div&gt;
+&lt;/div&gt;
+&lt;/h4&gt;
+&lt;/div&gt;
 &lt;div id="collapse2" class="panel-collapse collapse"&gt;
 &lt;div class="panel-body"&gt;
 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 commodo consequat.
-&lt;div&gt;
-&lt;div&gt;
-&lt;div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 		</pre>
+        
 	</div><!--.col-md-6-->
+        
 	<div class="bs-docs-section" id="control-table">
+        
 		<h2>Table</h2>
 		<p>A basic Bootstrap table has a light padding and only horizontal dividers.The <code>.table</code> class adds basic styling to a table:</p>
-		<table class="table">
+<table class="table">
 			<tr>
 				<th>Firstname</th>
 				<th>Lastname</th>
@@ -466,35 +502,34 @@ commodo consequat.
 			</tr>
 		</table>
 		<pre class="pre-scrollable gs-color">
-&lt;table class="table darkbo">
-&lt;thead>
+&lt;table class="table">
 &lt;tr>
-&lt;th>Firstname&lt;th>
-&lt;th>Lastname&lt;th>
-&lt;th>Email&lt;th>
+&lt;th>Firstname&lt;/th>
+&lt;th>Lastname&lt;/th>
+&lt;th>Email&lt;/th>
+&lt;/tr>
 &lt;tr>
-&lt;thead>
-&lt;tbody>
+&lt;td>NONVALIDElesbadianes@aol.com&lt;/td>
+&lt;td>BOUNCE&lt;/td>
+&lt;td>28/03/2017&lt;/td>
+&lt;/tr>
 &lt;tr>
-&lt;td>NONVALIDElesbadianes@aol.com&lt;td>
-&lt;td>BOUNCE&lt;td>
-&lt;td>28/03/2017&lt;td>
+&lt;td>Hatemberrqhmoun@gmx.fr&lt;/td>
+&lt;td>DÉSABONNEMENT&lt;/td>
+&lt;td>28/03/2017&lt;/td>
+&lt;/tr>
 &lt;tr>
-&lt;tr>
-&lt;td>Hatemberrqhmoun@gmx.fr&lt;td>
-&lt;td>DÉSABONNEMENT&lt;td>
-&lt;td>28/03/2017&lt;td>
-&lt;tr>
-&lt;tr>
-&lt;td>pahache89@wanadoo.fr&lt;td>
-&lt;td>BOUNCE&lt;td>
-&lt;td>28/03/2017&lt;td>
-&lt;tr>
-&lt;tbody>
-&lt;table>
+&lt;td>pahache89@wanadoo.fr&lt;/td>
+&lt;td>BOUNCE&lt;/td>
+&lt;td>28/03/2017&lt;/td>
+&lt;/tr>
+&lt;/table>
 		</pre>
+        
 	</div><!--.bs-docs-section-->
+        
     <div class="bs-docs-section">
+        
         <h2 id="control-attractive-rounded-input">Attractive Rounded input</h2>
         <br>
         <div class="input-group col-md-5">
@@ -505,10 +540,10 @@ commodo consequat.
         <br>
         <pre class="pre-scrollable gs-color">
 &lt;div class="input-group col-md-5">
-&lt;span class="input-group-addon add" id="basic-addon1">&nbsp;&lt;i>contact&lt;i>&nbsp;&lt;span>
-&lt;input type="text" class="form-control add" value="&nbsp;http://auto.selection.fr/rendez-vous-atelier" aria-describedby="basic-addon1" readonly>
-&lt;span class="input-group-addon remove" id="basic-addon1">&lt;i class="fa fa-times" aria-hidden="true">&lt;i>&lt;span>
-&lt;div>
+&lt;span class="input-group-addon add" id="basic-addon1">&lt;span>contact&lt;/span>&lt;/span>
+&lt;input type="text" class="form-control add" value="http://auto.selection.fr/rendez-vous-atelier" aria-describedby="basic-addon1" readonly>
+&lt;span class="input-group-addon remove" id="basic-addon1">&lt;i class="fa fa-times" aria-hidden="true">&lt;/i>&lt;/span>
+&lt;/div>
         </pre>
         <div class="input-group col-md-1">
   			<input type="text" class="form-control add marques" value="Fiat" aria-describedby="basic-addon1" readonly>
@@ -516,14 +551,16 @@ commodo consequat.
 		</div>
         <br>
         <pre class="pre-scrollable gs-color">
-&lt;div class="input-group col-md-2">
-&lt;span class="input-group-addon add" id="basic-addon1">&nbsp;&lt;i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i>&nbsp;&lt;span>
-&lt;input type="text" class="form-control add marques" value="Land Rover" aria-describedby="basic-addon1" readonly>
-&lt;span class="input-group-addon remove" id="basic-addon1">&lt;i class="fa fa-times" aria-hidden="true">&lt;i>&lt;span>
-&lt;div>
+&lt;div class="input-group">
+&lt;input type="text" class="form-control add marques" value="Fiat" aria-describedby="basic-addon1" readonly>
+&lt;span class="input-group-addon remove" id="basic-addon1">&lt;i class="fa fa-times" aria-hidden="true">&lt;/i>&lt;/span>
+&lt;/div>
         </pre>
+        
     </div><!--.bs-docs-section-->
+        
     <div class="bs-docs-section">
+        
         <h2 id="control-typography">Typography</h2>
         <br>
         <h1>h1. Garagescore heading <small>Secondary text</small></h1>
@@ -535,15 +572,17 @@ commodo consequat.
         <br>
         <p>Create lighter, secondary text in any heading with a generic <code>&lt;small></code> tag or the <code>.small</code> class.</p>
         <pre class="pre-scrollable gs-color">
-&lt;h1>h1. Bootstrap heading &lt;small>Secondary text&lt;small>&lt;h1>
-&lt;h2>h2. Bootstrap heading &lt;small>Secondary text&lt;small>&lt;h2>
-&lt;h3>h3. Bootstrap heading &lt;small>Secondary text&lt;small>&lt;h3>
-&lt;h4>h4. Bootstrap heading &lt;small>Secondary text&lt;small>&lt;h4>
-&lt;h5>h5. Bootstrap heading &lt;small>Secondary text&lt;small>&lt;h5>
-&lt;h6>h6. Bootstrap heading &lt;small>Secondary text&lt;small>&lt;h6>
+&lt;h1>h1. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h1>
+&lt;h2>h2. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h2>
+&lt;h3>h3. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h3>
+&lt;h4>h4. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h4>
+&lt;h5>h5. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h5>
+&lt;h6>h6. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h6>
         </pre>
     </div><!--.bs-docs-section-->
+        
     <div class="bs-docs-section">
+        
         <h2 id="control-footer">Footer</h2>
         <footer class="footer">
             <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
@@ -555,26 +594,29 @@ commodo consequat.
         <br>
         <pre class="pre-scrollable gs-color">
 &lt;footer class="footer">
-&lt;a href='#'>&lt;i class="fa fa-facebook fa-3x fa-fw">&lt;i>&lt;a>
-&lt;a href='#'>&lt;i class="fa fa-twitter fa-3x fa-fw">&lt;i>&lt;a>
-&lt;a href='#'>&lt;i class="fa fa-youtube-play fa-3x fa-fw">&lt;i>&lt;a>
-&lt;a href='#'>&lt;i class="fa fa-rss fa-3x fa-fw">&lt;i>&lt;a>
-&lt;a href='#'>&lt;i class="fa fa-linkedin fa-3x fa-fw">&lt;i>&lt;a>
-&lt;footer>
+&lt;a href='#'>&lt;i class="fa fa-facebook fa-3x fa-fw">&lt;/i>&lt;/a>
+&lt;a href='#'>&lt;i class="fa fa-twitter fa-3x fa-fw">&lt;/i>&lt;/a>
+&lt;a href='#'>&lt;i class="fa fa-youtube-play fa-3x fa-fw">&lt;/i>&lt;/a>
+&lt;a href='#'>&lt;i class="fa fa-rss fa-3x fa-fw">&lt;/i>&lt;/a>
+&lt;a href='#'>&lt;i class="fa fa-linkedin fa-3x fa-fw">&lt;/i>&lt;/a>
+&lt;/footer>
         </pre>
+         
     </div><!--.bs-docs-section-->
+
     <div class="bs-docs-section">
         
-    </div><!--.bs-docs-section-->
-    <div class="bs-docs-section">
         <aside class="sticky">
-        <ul>
-            <li><a href="#" class="widget" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="icons/ic-widget.png" ></a></li>
-            <li><a href="#" class="certificat" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="icons/ic-certificat.png" ></a></li>
-        </ul>
-</aside>
-    </div>
+            <ul>
+                <li><a href="#" class="widget" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="icons/ic-widget.png" ></a></li>
+                <li><a href="#" class="certificat" target="_blank"><span>https://www.garagescore.com/garage/garage-de-l-etoile-mercedes-benz-brest</span><img src="icons/ic-certificat.png" ></a></li>
+            </ul>
+        </aside>
+        
+    </div><!--.bs-docs-section-->
+        
 	</div><!--.col-md-9-->
+        
 	<div class="col-md-3" role="complementary">
 		<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
             <ul class="nav bs-docs-sidenav"> 
@@ -591,11 +633,12 @@ commodo consequat.
                 <li class=""> 
                     <a href="#Buttons">Buttons</a> 
                     <ul class="nav"> 
-                        <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li> 
+                        <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li>
+                        <li class=""><a class="" href="#">Button 3D</a></li>
                         <li class=""><a class="" href="#buttons-pagination">Pagination</a></li> 
                         <li class=""><a class="" href="#buttons-radio">Radio</a></li> 
                         <li class=""><a class="" href="#buttons-checkBoxes">CheckBoxes</a></li> 
-                        <li class=""><a class="" href="#buttons-switch-button">Switch button</a></li> 
+                        <li class=""><a class="" href="">icons</a></li> 
                     </ul> 
                 </li>
                 <li class=""> 
