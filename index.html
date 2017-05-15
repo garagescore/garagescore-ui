@@ -13,59 +13,83 @@
 </head>
 <body class="darkbo" id="gs-dbo">
 	<header class="affix">
-		<a href="#" class="v4-tease">darkbo Back Office, Framework CSS</a>
+		<a href="#" class="v4-tease">Dark Back Office, Framework CSS</a>
 	</header>
     <br><br><br>
 	<div class="container bs-docs-container">
 	<div class="row">
 	<div class="col-md-9">
-    <h1 id="Inputs">Inputs</h1>
         
-	<div class="bs-docs-section">
+        <div class="bs-docs-section" id="inputs">
+            
+            <h1 class="h1-anim">Darkbo.css</h1>
+            <h4>
+                For any use of our Darkbo.css framework, just put the <code>.darkbo</code> class on the body of the page web or just on the element to styled.
+            </h4>
+        </div><!--.bs-docs-section-->  
         
-		<h2 id="anchor-2">Input groups</h2>
+	<div class="bs-docs-section" id="inputs-optional-icons">
+        <h2>Inputs</h2>
+		<h3>With optional icons</h3>
 		<div class="input-group">
   			<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-search"></i></span>
   			<input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon1">
 		</div>
 		<br>
-        <pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable ">
 &lt;div class="input-group">
 &lt;span class="input-group-addon" id="basic-addon1"&gt;&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon1"/&gt;
 &lt;/div&gt;
         </pre>
-        
+
 	</div><!--.bs-docs-section-->
         
 	<div class="bs-docs-section" id="inputs-input">
         
-		<h2>Input</h2>
+		<h3>Input</h3>
 		<p>
 			Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.
 		</p>
 		<input type="text" class="form-control" placeholder="Text input">
         <br>
-        <pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable ">
 &lt;input type="text" class="form-control" placeholder="Text input"/&gt;
         </pre>
-
+        <h4>Disabled state</h4>
+        <p>
+            Add the <code>disabled</code> boolean attribute on an input to prevent user interactions.
+        </p>
+        <input type="text" class="form-control" placeholder="Disabled input" disabled>
+        <br>
+        <pre class="pre-scrollable">
+&lt;input type="text" class="form-control" placeholder="Disabled input" disabled>
+        </pre>
+        <h4>Readonly state</h4>
+        <p>
+            Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
+        </p>
+        <input type="text" class="form-control" placeholder="Readonly input" readonly>
+        <br>
+        <pre class="pre-scrollable">
+&lt;input type="text" class="form-control" placeholder="Readonly input" value="Readonly input" readonly>  
+        </pre>
 	</div><!--.bs-docs-section-->
         
 	<div class="bs-docs-section" id="inputs-textarea">
         
-		<h2>Textarea</h2>
+		<h3>Textarea</h3>
 		<p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
 		<textarea class="form-control" rows="3"></textarea>
 		<br>
-		<pre class="gs-color">
+		<pre class="pre-scrollable ">
 &lt;textarea class="form-control" rows="3"&gt;&lt;textarea&gt;
 		</pre>
         
 	</div><!--.bs-docs-section-->
         
 	<div class="bs-docs-section" id="inputs-basic-block">
-		<h2>Basic block</h2>
+		<h3>Basic block</h3>
 		<p>Use <code>pre</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
 		<p>You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
         <pre class="pre-scrollable darkbo">
@@ -92,8 +116,8 @@
 }
 }
         </pre>
-        <pre class="pre-scrollable gs-color">
-&lt;pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable">
+&lt;pre class="pre-scrollable ">
 {
 *_reference* *generic_xls_mmddyyyy*;
 "foreigns" {
@@ -120,15 +144,50 @@
 		</pre>
         
 	</div><!--.bs-docs-section-->
+    
+    <div class="bs-docs-section" id="inputs-basic-block">
+        
+        <h3>List</h3>
+        <form class="form-group">
+            <p><a class="btn btn-3d btn-3d-1 btn-default-3d" href="#" role="button">Create a new user</a></p>
+            <div class="form-horizontal">
+                <p><a href="mailto:#">a.pache@garagemoderne.fr</a></p>
+                <p><a href="mailto:#">a.pache@garagemoderne.fr</a></p>
+                <p><a href="mailto:#">a.pache@garagemoderne.fr</a></p>
+                <p><a href="mailto:#">a.rey@renault.fr</a></p>
+                <p><a href="mailto:#">alexandra@renault.fr</a></p>
+                <p><a href="mailto:#">alexandra@peugeot.fr</a></p>
+                <p><a href="mailto:#">a.pache@garagemoderne.fr</a></p>
+                <p><a href="mailto:#">a.pache@garagemoderne.fr</a></p>
+                <p><a href="mailto:#">a.pache@garagemoderne.fr</a></p>
+                <p><a href="mailto:#">a.rey@renault.fr</a></p>
+                <p><a href="mailto:#">alexandra@renault.fr</a></p>
+                <p><a href="mailto:#">alexandra@peugeot.fr</a></p>
+            </div>
+        </form>
+        <pre class="pre-scrollable">
+&lt;form class="form-group">
+&lt;p>&lt;a class="btn btn-3d btn-3d-1 btn-default-3d not" href="#" role="button">Create a new user&lt;/a>&lt;/p>
+&lt;div class="form-horizontal">
+&lt;p>&lt;a href="mailto:#">a.pache@garagemoderne.fr&lt;/a>&lt;/p>
+&lt;p>&lt;a href="mailto:#">a.pache@garagemoderne.fr&lt;/a>&lt;/p>
+&lt;p>&lt;a href="mailto:#">a.pache@garagemoderne.fr&lt;/a>&lt;/p>
+&lt;p>&lt;a href="mailto:#">a.rey@renault.fr&lt;/a>&lt;/p>
+&lt;p>&lt;a href="mailto:#">alexandra@renault.fr&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/form>  
+        </pre>
+        
+    </div><!--.bs-docs-section-->
         
 	<div class="bs-docs-section" id="inputs-file-input">
         
-		<h2>File input</h2>
+		<h3>File input</h3>
 		<div class="box">
 			<input type="file" name="file" id="file" class="form-control"/>
 			<label for="file"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choisissez un fichier&hellip;</span></label>
 		</div>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable">
 &lt;div class="box"&gt;
 &lt;input type="file" name="file" id="file" class="form-control"/&gt;
 &lt;label for="file"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">&lt;path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>&lt;/svg&gt; &lt;span>Choose a file&hellip;&lt;/span>&lt;/label&gt;
@@ -138,42 +197,99 @@
         
 	<div class="bs-docs-section" id="buttons-basic-button">
         
-        <h1 id="Buttons">Buttons</h1>
-		<h2>Basic Buttons</h2>
+        <h2 id="Buttons">Buttons</h2>
+        <h3>Button tags</h3>
+        <p>
+            Use the button classes on an <code>&lt;a></code>, <code>&lt;button></code>, or <code>&lt;input></code> element.
+        </p>
+        <a class="btn btn-default" href="#" role="button">Link</a>
+        <button class="btn btn-default" type="submit">Button</button>
+        <input class="btn btn-default" type="button" value="Input">
+        <input class="btn btn-default" type="submit" value="Submit">
+        <br><br>
+        <pre class="pre-scrollable">
+&lt;a class="btn btn-default" href="#" role="button">Link&lt;/a>
+&lt;button class="btn btn-default" type="submit">Button&lt;/button>
+&lt;input class="btn btn-default" type="button" value="Input">
+&lt;input class="btn btn-default" type="submit" value="Submit">
+        </pre>
+        <div class="bs-callout bs-callout-warning">
+            <h4>Context-specific usage</h4>
+            <p>
+                While button classes can be used on <code>&lt;a></code> and <code>&lt;button></code> elements, only <code>&lt;button></code> elements are supported within our nav and navbar components.
+            </p>
+        </div>
+        <br>
+        <div class="bs-callout bs-callout-warning">
+            <h4>Links acting as buttons</h4>
+            <p>
+                If the <code>&lt;a></code> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate <code>role="button"</code>.
+            </p>
+        </div>
+        <br>
+        <div class="bs-callout bs-callout-warning">
+            <h4>Cross-browser rendering</h4>
+            <p>
+                As a best practice, we highly recommend using the <code>&lt;button></code> element whenever possible to ensure matching cross-browser rendering.
+            </p>
+        </div>
+        <h3>Sizes</h3>
+        <p>
+            Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.
+        </p>
+        <br>
+        <p><button type="button" class="btn btn-default btn-lg">Large button</button></p>
+        <p><button type="button" class="btn btn-default">Default button</button></p>
+        <p><button type="button" class="btn btn-default btn-sm">Small button</button></p>
+        <p><button type="button" class="btn btn-default btn-xs">Extra small button</button></p>
+        <br>
+        <pre class="pre-scrollable ">
+&lt;p>&lt;button type="button" class="btn btn-default btn-lg">Large button&lt;/button>&lt;/p>
+&lt;p>&lt;button type="button" class="btn btn-default">Default button&lt;/button>&lt;/p>
+&lt;p>&lt;button type="button" class="btn btn-default btn-sm">Small button&lt;/button>&lt;/p>
+&lt;p>&lt;button type="button" class="btn btn-default btn-xs">Extra small button&lt;/button>&lt;/p>
+        </pre>
+        <br>
+		<h3>Basic Buttons</h3>
 		<button type="button" class="btn btn-default">Créer / Save</button>
 		<br><br>	
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable">
 &lt;button type="button" class="btn btn-default">Sauvegarder&lt;/button&gt;
 		</pre>
+        
 		<button type="button" class="btn btn-info">Rechercher</button>
 		<br><br>	
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;button type="button" class="btn btn-info">Rechercher&lt;/button&gt;
 		</pre>
+        
 		<button type="button" class="btn btn-success">Créer un nouveau garage</button>
 		<br><br>	
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;button type="button" class="btn btn-success">Créer un nouveau garage&lt;/button&gt;
 		</pre>
+        
 		<button type="button" class="btn btn-danger">Delete / Résilier</button>
 		<br><br>	
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;button type="button" class="btn btn-danger">Delete&lt;/button&gt;
 		</pre>
+        
 		<button type="button" class="btn btn-warning"><span>Renommer garage sur bime</span></button>
 		<br><br>	
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;button type="button" class="btn btn-warning"&gt;&lt;span&gt;Renommer garage sur bime&lt;/span&gt;&lt;/button&gt;
 		</pre>
-        <h2>Boutton 3D</h2>
+        
+        <h3>Boutton 3D</h3>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder</button>
         <br>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Créer un nouveau garage</button>
         <br>
-        <pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable ">
 &lt;button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder&lt;/button>
         </pre>
-        <h2>Icons</h2>
+        <h3>Icons</h3>
         <br>
         <div class="darkbo-icon darkbo-icon-1">
             <a href="#" class="effet-1 icon-information"><i class="fa" aria-hidden="true"></i></a>
@@ -181,7 +297,7 @@
             <a href="#" class="effet-1 icon-parametrage"><i class="fa" aria-hidden="true"></i></a>
         </div>
         <br>
-        <pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable ">
 &lt;div class="darkbo-icon darkbo-icon-1">
 &lt;a href="#" class="effet-1 icon-information">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
 &lt;a href="#" class="effet-1 icon-branchement">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
@@ -192,7 +308,7 @@
         
     <div class="bs-docs-section" id="buttons-pagination">
         
-        <h2>Pagination</h2>
+        <h3>Pagination</h3>
 		<nav aria-label="...">
 		<ul class="pagination">
 		    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
@@ -204,7 +320,7 @@
 		    <li><a href="#">&raquo;</a></li>
 		</ul>
 		</nav>
-  		<pre class="pre-scrollable gs-color">
+  		<pre class="pre-scrollable ">
 &lt;nav aria-label="...">
 &lt;ul class="pagination">
 &lt;li class="disabled">&lt;a href="#" aria-label="Previous">&lt;span aria-hidden="true">&laquo;&lt;/span>&lt;/a>&lt;/li>
@@ -222,13 +338,13 @@
 
 	<div class="bs-docs-section" id="buttons-radio">
         
-		 <h1>Radio</h1>
+		 <h3>Radio</h3>
 		<input type="radio" name="abc" class="toggle" checked="checked">
 		<input type="radio" name="abc" class="toggle">
 		<input type="radio" name="abc" class="toggle">
 		<input type="radio" name="abc" class="toggle">
 		<br><br>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;input type="radio" name="abc" class="toggle darkbo" checked="checked"&gt;
 		</pre>
         
@@ -236,13 +352,13 @@
 	
 	<div class="bs-docs-section" id="buttons-checkBoxes">
         
-		<h1>CheckBoxes</h1>
+		<h3>CheckBoxes</h3>
 		<input type="checkbox" class="toggle">
 		<input type="checkbox" class="toggle">
 		<input type="checkbox" class="toggle">
 		<input type="checkbox" class="toggle" checked="checked">
 		<br><br>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;input type="checkbox" class="toggle"/&gt;
 		</pre>
         
@@ -250,34 +366,56 @@
         
 	<div class="bs-docs-section" id="buttons-switch-button">
         
-		<h2>Switch button</h2>
+		<h3>Switch button</h3><br>
   		<p><input  type="checkbox" class="switch" id="test1"><label for="test1"><span class="ui"></span><span class="text">Activer mode maintenance</span></label></p>
   		<p><input  type="checkbox" class="switch" id="test2"  checked="checked"><label for="test2"><span class="ui"></span><span class="text">Déactiver mode maintenance</span></label></p>
   		<br>
-  		<pre class="pre-scrollable gs-color">
+  		<pre class="pre-scrollable ">
 &lt;p>&lt;input type="checkbox" id="test1">&lt;label for="test1">&lt;span class="ui">&lt;/span>&lt;span class="text">Activer mode maintenance&lt;/span>&lt;/label>&lt;/p> 		
   		</pre>
 	</div>
 	<div class="bs-docs-section" id="control-select">
-        <h1 id="Control">Control</h1>
-		<h2>Select</h2>
+        <h2 id="Control">Control</h2>
+		<h3>Selects</h3>
+        <p>
+            Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.
+        </p>
 		<select class="form-control">
 	  		<option>Ajouter un garage</option>
 	  		<option>2</option>
 		</select>
 		<br>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;select class="form-control"&gt;
 &lt;option&gt;Ajouter un garage&lt;/option&gt;
 &lt;option&gt;2&lt;/option&gt;
 &lt;/select&gt;			
 		</pre>
-        
+        <p>
+            For <code>&lt;select></code> controls with the multiple attribute, <code>multiple</code> options are shown by default.
+        </p>
+        <select multiple class="form-control">
+	  		<option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+		</select>
+        <br>
+        <pre class="pre-scrollable ">
+&lt;select multiple class="form-control">
+&lt;option>1&lt;/option>
+&lt;option>2&lt;/option>
+&lt;option>3&lt;/option>
+&lt;option>4&lt;/option>
+&lt;option>5&lt;/option>
+&lt;/select>
+        </pre>
 	</div><!--.bs-docs-section-->
         
 	<div class="bs-docs-section" id="control-navbar">
         
-        <h2>Navbar</h2>
+        <h3>Navbar</h3>
 		<ul class="nav nav-tabs">
 			<li role="presentation" class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -313,7 +451,7 @@
 			</li>
 		</ul>
 		<br>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;ul class="nav nav-tabs">
 &lt;li role="presentation" class="dropdown">
 &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -351,7 +489,7 @@ Rapports
 		</pre>
 	</div>
 	<div class="bs-docs-section" id="control-accordion">
-		<h2>Accordion</h2>
+		<h3>Accordion</h3>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -426,7 +564,7 @@ Rapports
 				</div>
 			</div>
 		</div>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;div class="panel panel-default"&gt;
 &lt;div class="panel-heading"&gt;
 &lt;h4 class="panel-title">
@@ -477,7 +615,7 @@ commodo consequat.
         
 	<div class="bs-docs-section" id="control-table">
         
-		<h2>Table</h2>
+		<h3>Table</h3>
 		<p>A basic Bootstrap table has a light padding and only horizontal dividers.The <code>.table</code> class adds basic styling to a table:</p>
 <table class="table">
 			<tr>
@@ -501,7 +639,7 @@ commodo consequat.
 				<td>28/03/2017</td>
 			</tr>
 		</table>
-		<pre class="pre-scrollable gs-color">
+		<pre class="pre-scrollable ">
 &lt;table class="table">
 &lt;tr>
 &lt;th>Firstname&lt;/th>
@@ -530,7 +668,7 @@ commodo consequat.
         
     <div class="bs-docs-section">
         
-        <h2 id="control-attractive-rounded-input">Attractive Rounded input</h2>
+        <h3 id="control-attractive-rounded-input">Attractive Rounded input</h3>
         <br>
         <div class="input-group col-md-5">
   			<span class="input-group-addon add" id="basic-addon1"><span>contact</span></span>
@@ -538,7 +676,7 @@ commodo consequat.
             <span class="input-group-addon remove" id="basic-addon1"><i class="fa fa-times" aria-hidden="true"></i></span>
 		</div>
         <br>
-        <pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable ">
 &lt;div class="input-group col-md-5">
 &lt;span class="input-group-addon add" id="basic-addon1">&lt;span>contact&lt;/span>&lt;/span>
 &lt;input type="text" class="form-control add" value="http://auto.selection.fr/rendez-vous-atelier" aria-describedby="basic-addon1" readonly>
@@ -550,7 +688,7 @@ commodo consequat.
             <span class="input-group-addon remove" id="basic-addon1"><i class="fa fa-times" aria-hidden="true"></i></span>
 		</div>
         <br>
-        <pre class="pre-scrollable gs-color">
+        <pre class="pre-scrollable ">
 &lt;div class="input-group">
 &lt;input type="text" class="form-control add marques" value="Fiat" aria-describedby="basic-addon1" readonly>
 &lt;span class="input-group-addon remove" id="basic-addon1">&lt;i class="fa fa-times" aria-hidden="true">&lt;/i>&lt;/span>
@@ -562,29 +700,102 @@ commodo consequat.
     <div class="bs-docs-section">
         
         <h2 id="control-typography">Typography</h2>
+        <h3>Headings</h3>
         <br>
         <h1>h1. Garagescore heading <small>Secondary text</small></h1>
-        <h2>h2. Garagescore heading <small>Secondary text</small></h2>
-        <h3>h3. Garagescore heading <small>Secondary text</small></h3>
+        <h2 class="not">h2. Garagescore heading <small>Secondary text</small></h2>
+        <h3 class="not">h3. Garagescore heading <small>Secondary text</small></h3>
         <h4>h4. Garagescore heading <small>Secondary text</small></h4>
         <h5>h5. Garagescore heading <small>Secondary text</small></h5>
         <h6>h6. Garagescore heading <small>Secondary text</small></h6>
         <br>
-        <p>Create lighter, secondary text in any heading with a generic <code>&lt;small></code> tag or the <code>.small</code> class.</p>
-        <pre class="pre-scrollable gs-color">
-&lt;h1>h1. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h1>
-&lt;h2>h2. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h2>
-&lt;h3>h3. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h3>
-&lt;h4>h4. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h4>
-&lt;h5>h5. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h5>
-&lt;h6>h6. Bootstrap heading &lt;small>Secondary text&lt;/small>&lt;/h6>
+        <p>
+            Create lighter, secondary text in any heading with a generic <code>&lt;small></code> tag or the <code>.small</code> class.
+        </p>
+        <pre class="pre-scrollable ">
+&lt;h1>h1. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h1>
+&lt;h2>h2. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h2>
+&lt;h3>h3. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h3>
+&lt;h4>h4. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h4>
+&lt;h5>h5. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h5>
+&lt;h6>h6. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h6>
+        </pre>
+        <h3>Marked text</h3>
+        <p>
+            For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark></code> tag.
+        </p>
+        You can use the mark tag to <mark class="darkbo">Garagescore</mark> text.
+        <br><br>
+        <pre class="pre-scrollable ">
+You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text.
+        </pre>
+        
+        <h3>Deleted text</h3>
+        <p>For indicating blocks of text that have been deleted use the <code>&lt;del></code> tag.</p>
+        <del>This line of text is meant to be treated as deleted text.</del>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;del>This line of text is meant to be treated as deleted text.&lt;/del> 
+        </pre>
+        
+        <h3>Underlined text</h3>
+        <p>To underline text use the <code>&lt;u></code> tag.</p>
+        <u>This line of text will render as underlined</u>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;u>This line of text will render as underlined&lt;/u>  
+        </pre>
+        
+        <h3>Small text</h3>
+        <p>
+            For de-emphasizing inline or blocks of text, use the <code>&lt;small></code> tag to set text at 85% the size of the parent. Heading elements receive their own font-size for nested <code>&lt;small></code> elements.
+        </p>
+        <p>
+            You may alternatively use an inline element with .small in place of any <code>&lt;small></code>.
+        </p>
+        <small>This line of text is meant to be treated as fine print.</small>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;small>This line of text is meant to be treated as fine print.&lt;/small>
+        </pre>
+        
+        <h3>Bold</h3>
+        <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+        The following snippet of text is <strong>rendered as bold text.</strong>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;strong class="darkbo">rendered as bold text&lt;/strong>
+        </pre>
+        
+        <h3>Italics</h3>
+        <p>For emphasizing a snippet of text with italics.</p>
+        <p>The following snippet of text is rendered as <em>italicized text.</em></p>
+        <br>
+        <pre class="pre-scrollable ">
+&lt;em>italicized text&lt;/em>   
+        </pre>
+        
+        <h3>Addresses</h3>
+        <p>
+            Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with <code>&lt;br></code>.
+        </p>
+        <br>
+        <address>
+            <strong>Full Name</strong><br>
+            <a href="mailto:#">first.last@example.com</a>
+        </address>
+        <pre class="pre-scrollable ">
+&lt;address>
+&lt;strong>Full Name&lt;/strong>&lt;br>
+&lt;a href="mailto:#">first.last@example.com&lt;/a>
+&lt;/address>
         </pre>
     </div><!--.bs-docs-section-->
         
     <div class="bs-docs-section">
         
-        <h2 id="control-footer">Footer</h2>
-        <footer class="footer">
+        <h3 id="control-social">Social Network</h3>
+        <footer class="social">
             <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
             <a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
             <a href='#'><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
@@ -592,8 +803,8 @@ commodo consequat.
             <a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
         </footer>
         <br>
-        <pre class="pre-scrollable gs-color">
-&lt;footer class="footer">
+        <pre class="pre-scrollable ">
+&lt;footer class="social">
 &lt;a href='#'>&lt;i class="fa fa-facebook fa-3x fa-fw">&lt;/i>&lt;/a>
 &lt;a href='#'>&lt;i class="fa fa-twitter fa-3x fa-fw">&lt;/i>&lt;/a>
 &lt;a href='#'>&lt;i class="fa fa-youtube-play fa-3x fa-fw">&lt;/i>&lt;/a>
@@ -619,41 +830,53 @@ commodo consequat.
         
 	<div class="col-md-3" role="complementary">
 		<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
-            <ul class="nav bs-docs-sidenav"> 
+            <ul class="nav bs-docs-sidenav" id="menu-accordeon"> 
                 <li class=""> 
-                    <a href="#Inputs">Inputs</a> 
+                    <a href="#inputs">Inputs</a> 
                     <ul class="nav"> 
-                        <li class=""><a class="" href="">Input groups</a></li> 
+                        <li class=""><a class="" href="#inputs-optional-icons">With optional icons</a></li> 
                         <li class=""><a class="" href="#inputs-input">Input</a></li> 
                         <li class=""><a class="" href="#inputs-textarea">Textarea</a></li> 
-                        <li class=""><a class="" href="#inputs-basic-block">Basic block</a></li> 
+                        <li class=""><a class="" href="#inputs-basic-block">Basic block</a></li>
+                        <li class=""><a class="" href="#inputs-basic-block">List</a></li> 
                         <li class=""><a class="" href="#inputs-file-input">File input</a></li> 
                     </ul> 
                 </li> 
                 <li class=""> 
                     <a href="#Buttons">Buttons</a> 
-                    <ul class="nav"> 
+                    <ul class="nav">
+                        <li class=""><a class="" href="">Button tags</a></li>
+                        <li class=""><a class="" href="">Sizes</a></li>
                         <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li>
                         <li class=""><a class="" href="#">Button 3D</a></li>
+                        <li class=""><a class="" href="#">Icons</a></li>
                         <li class=""><a class="" href="#buttons-pagination">Pagination</a></li> 
                         <li class=""><a class="" href="#buttons-radio">Radio</a></li> 
                         <li class=""><a class="" href="#buttons-checkBoxes">CheckBoxes</a></li> 
-                        <li class=""><a class="" href="">icons</a></li> 
                     </ul> 
                 </li>
                 <li class=""> 
                     <a href="#Control">Control</a> 
                     <ul class="nav"> 
-                        <li class=""><a class="" href="#control-select">Select</a></li> 
+                        <li class=""><a class="" href="#control-select">Selects</a></li> 
                         <li class=""><a class="" href="#control-navbar">navbar</a></li> 
                         <li class=""><a class="" href="#control-accordion">Accordion</a></li> 
                         <li class=""><a class="" href="#control-table">Table</a></li> 
                         <li class=""><a class="" href="#control-attractive-rounded-input">Attractive Rounded input</a></li>
-                        <li class=""><a class="" href="#control-typography">Typography</a></li>
-                        <li class=""><a class="" href="#control-footer">Footer</a></li> 
                     </ul> 
                 </li>
-            </ul> 
+                <li class=""> 
+                    <a href="#Control">Thypography</a> 
+                    <ul class="nav"> 
+                        <li class=""><a class="" href="#control-select">Headings</a></li> 
+                        <li class=""><a class="" href="#control-navbar">Marked text</a></li> 
+                        <li class=""><a class="" href="#control-accordion">Deleted text</a></li> 
+                        <li class=""><a class="" href="#control-table">Underlined text</a></li> 
+                        <li class=""><a class="" href="#control-attractive-rounded-input">Small text</a></li>
+                    </ul> 
+                </li>
+            </ul>
+            <br>
             <a href="#top" class="back-to-top"> Back to top </a>
 		</nav> 
 	</div><!--.col-md-3 role="complementary"-->

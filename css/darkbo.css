@@ -1,6 +1,6 @@
 /*@import '../showcase/style.less'*/
 html { font :   62.5% "Roboto Regular";}
-h1, h2, h3, h4, h5, h6, p, span, a, label, span {font-family: "Roboto Regular" !important;}
+h1, h2, h3, h4, h5, h6, p, span, a, label, span, small {font-family: "Roboto Regular" !important;}
 body { font : 1.4rem "Roboto Regular"; } /* =14px */
 .gs-color {
 	color: #219ab5;
@@ -9,6 +9,7 @@ body { font : 1.4rem "Roboto Regular"; } /* =14px */
 .darkbo .form-control, .form-control.darkbo, .darkbo figure pre, pre.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	color :#FFF;
+    text-transform: capitalize;
 	font :  1em "Roboto Regular";
 	border : 2px solid #272B42;
     -moz-border-radius : 5px;
@@ -36,36 +37,42 @@ body { font : 1.4rem "Roboto Regular"; } /* =14px */
 .darkbo .form-control:focus, form-control.darkbo:focus {
     color: #A1A9BF;
 }
+input:focus::-webkit-input-placeholder {
+    color : #A1A9BF !important;
+}
+input:focus:-moz-placeholder {
+    color : #A1A9BF !important;  
+}
+input:focus::-moz-placeholder {
+    color : #A1A9BF !important;  
+} 
+input:focus:-ms-input-placeholder {  
+    color : #A1A9BF !important;  
+}
 input::-webkit-input-placeholder {
     color : white !important;
 }
- 
 input:-moz-placeholder {
     color : white !important;  
 }
- 
 input::-moz-placeholder {
     color : white !important;  
-}
- 
+} 
 input:-ms-input-placeholder {  
     color : white !important;  
 }
-
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
     border-radius: 10px;
 }
- 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
+    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1);
 }
-.form-group.form-group.darkbo{
+.darkbo .form-group, .form-group.darkbo{
 	padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
@@ -75,6 +82,15 @@ input:-ms-input-placeholder {
     background-image : linear-gradient(90deg, #414968, #272B42);
     border : 2px solid #414968;
     border-radius: 4px;
+}
+.darkbo .form-horizontal {
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.darkbo .form-horizontal a:hover {
+    text-decoration: none;
+    color: #488abc;
 }
 .js .box .form-control {
     width: 0.1px;
@@ -610,17 +626,14 @@ pre.pre-scrollable {
 .darkbo .form-control.marques, .form-control.marques.darkbo {
     border-radius: 20px 0 0 20px;   
 }
-.footer {
+.social {
     width: 100%;
     height: auto;
-    background-color: #111;
-    text-align: center;
     padding: 1rem 0;
 }
 .fa-twitter {
     color: #4099FF;
 }
-
 .fa-facebook {
     color: #3B5998;
 }
@@ -651,9 +664,9 @@ ul {
    padding: 0;
 }
 .darkbo .sticky, .sticky-social.darkbo {
-   right: 0;
-   position: fixed;
-   top: 45vh;
+    right: 0;
+    position: fixed;
+    top: 45vh;
     z-index: 1000;
 }
 .darkbo .sticky li, .sticky.darkbo li {
@@ -667,6 +680,7 @@ ul {
     text-align: center;
     line-height: 45px;
     width: 45px;
+    
 }
 .darkbo .sticky a span, .sticky.darkbo a span {
     line-height: 18px;
@@ -678,6 +692,8 @@ ul {
     height: 45px;
     font-size: 14px;
     padding: 5px 0 5px 15px;
+    transition: all .2s;
+    z-index: -1;
 }
 
 .darkbo .sticky a:hover span, .sticky.darkbo a:hover span {
@@ -786,4 +802,13 @@ ul {
 	text-transform: none;
 	display: block;
 	-webkit-font-smoothing: antialiased;
+}
+.darkbo mark, mark.darkbo {
+    background-color: rgba(32, 154, 181, 0.3);
+}
+.darkbo del, del.darkbo {
+    
+}
+.darkbo strong, strong.darkbo {
+    font-weight: 900;
 }
