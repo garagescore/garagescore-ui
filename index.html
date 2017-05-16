@@ -7,7 +7,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src=".js" type="text/javascript"></script>
+    <script src="js/showcase.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/darkbo.css"/>
   	<link rel="stylesheet" href="showcase/showcase.css"/> 
 </head>
@@ -16,6 +16,20 @@
 		<a href="#" class="v4-tease">Dark Back Office, Framework CSS</a>
 	</header>
     <br><br><br>
+    
+    <div id="pig-animation">
+
+  <img id="fence-far" src="icons/bootstrap.png"/>
+  <img  id="pig-leg-left-back" src="icons/html5.png"/>
+  <img  id="pig-leg-left-front" src="icons/css3.png"/>
+  <img id="pig-body" src="icons/DBO.png" />
+  
+
+  
+
+
+</div><!--pig-animationr-->
+    
 	<div class="container bs-docs-container">
 	<div class="row">
 	<div class="col-md-9">
@@ -145,7 +159,7 @@
         
 	</div><!--.bs-docs-section-->
     
-    <div class="bs-docs-section" id="inputs-basic-block">
+    <div class="bs-docs-section" id="inputs-basic-list">
         
         <h3>List</h3>
         <form class="form-group">
@@ -195,7 +209,7 @@
 		</pre>
 	</div><!--.bs-docs-section-->
         
-	<div class="bs-docs-section" id="buttons-basic-button">
+	<div class="bs-docs-section" id="buttons-tags">
         
         <h2 id="Buttons">Buttons</h2>
         <h3>Button tags</h3>
@@ -233,7 +247,7 @@
                 As a best practice, we highly recommend using the <code>&lt;button></code> element whenever possible to ensure matching cross-browser rendering.
             </p>
         </div>
-        <h3>Sizes</h3>
+        <h3 id="buttons-sizes">Sizes</h3>
         <p>
             Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.
         </p>
@@ -250,7 +264,7 @@
 &lt;p>&lt;button type="button" class="btn btn-default btn-xs">Extra small button&lt;/button>&lt;/p>
         </pre>
         <br>
-		<h3>Basic Buttons</h3>
+		<h3 id="buttons-basic-button">Basic Buttons</h3>
 		<button type="button" class="btn btn-default">Créer / Save</button>
 		<br><br>	
 		<pre class="pre-scrollable">
@@ -281,7 +295,7 @@
 &lt;button type="button" class="btn btn-warning"&gt;&lt;span&gt;Renommer garage sur bime&lt;/span&gt;&lt;/button&gt;
 		</pre>
         
-        <h3>Boutton 3D</h3>
+        <h3 id="buttons-3D">Boutton 3D</h3>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder</button>
         <br>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Créer un nouveau garage</button>
@@ -289,7 +303,7 @@
         <pre class="pre-scrollable ">
 &lt;button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder&lt;/button>
         </pre>
-        <h3>Icons</h3>
+        <h3 id="buttons-icons">Icons</h3>
         <br>
         <div class="darkbo-icon darkbo-icon-1">
             <a href="#" class="effet-1 icon-information"><i class="fa" aria-hidden="true"></i></a>
@@ -374,9 +388,9 @@
 &lt;p>&lt;input type="checkbox" id="test1">&lt;label for="test1">&lt;span class="ui">&lt;/span>&lt;span class="text">Activer mode maintenance&lt;/span>&lt;/label>&lt;/p> 		
   		</pre>
 	</div>
-	<div class="bs-docs-section" id="control-select">
-        <h2 id="Control">Control</h2>
-		<h3>Selects</h3>
+	<div class="bs-docs-section" id="Control">
+        <h2>Control</h2>
+		<h3 id="control-selects">Selects</h3>
         <p>
             Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.
         </p>
@@ -671,14 +685,14 @@ commodo consequat.
         <h3 id="control-attractive-rounded-input">Attractive Rounded input</h3>
         <br>
         <div class="input-group col-md-5">
-  			<span class="input-group-addon add" id="basic-addon1"><span>contact</span></span>
+  			<span class="input-group-addon add" id="basic-addon1"><span>Contact</span></span>
   			<input type="text" class="form-control add" value="http://auto.selection.fr/rendez-vous-atelier" aria-describedby="basic-addon1" readonly>
             <span class="input-group-addon remove" id="basic-addon1"><i class="fa fa-times" aria-hidden="true"></i></span>
 		</div>
         <br>
         <pre class="pre-scrollable ">
 &lt;div class="input-group col-md-5">
-&lt;span class="input-group-addon add" id="basic-addon1">&lt;span>contact&lt;/span>&lt;/span>
+&lt;span class="input-group-addon add" id="basic-addon1">&lt;span>Contact&lt;/span>&lt;/span>
 &lt;input type="text" class="form-control add" value="http://auto.selection.fr/rendez-vous-atelier" aria-describedby="basic-addon1" readonly>
 &lt;span class="input-group-addon remove" id="basic-addon1">&lt;i class="fa fa-times" aria-hidden="true">&lt;/i>&lt;/span>
 &lt;/div>
@@ -697,9 +711,9 @@ commodo consequat.
         
     </div><!--.bs-docs-section-->
         
-    <div class="bs-docs-section">
+    <div class="bs-docs-section" id="Thypography">
         
-        <h2 id="control-typography">Typography</h2>
+        <h2 id="thypography-headings">Typography</h2>
         <h3>Headings</h3>
         <br>
         <h1>h1. Garagescore heading <small>Secondary text</small></h1>
@@ -720,7 +734,7 @@ commodo consequat.
 &lt;h5>h5. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h5>
 &lt;h6>h6. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h6>
         </pre>
-        <h3>Marked text</h3>
+        <h3 id="thypography-marked-text">Marked text</h3>
         <p>
             For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark></code> tag.
         </p>
@@ -730,7 +744,7 @@ commodo consequat.
 You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text.
         </pre>
         
-        <h3>Deleted text</h3>
+        <h3 id="thypography-deleted-text">Deleted text</h3>
         <p>For indicating blocks of text that have been deleted use the <code>&lt;del></code> tag.</p>
         <del>This line of text is meant to be treated as deleted text.</del>
         <br><br>
@@ -738,7 +752,7 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
 &lt;del>This line of text is meant to be treated as deleted text.&lt;/del> 
         </pre>
         
-        <h3>Underlined text</h3>
+        <h3 id="thypography-underlined-text">Underlined text</h3>
         <p>To underline text use the <code>&lt;u></code> tag.</p>
         <u>This line of text will render as underlined</u>
         <br><br>
@@ -746,7 +760,7 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
 &lt;u>This line of text will render as underlined&lt;/u>  
         </pre>
         
-        <h3>Small text</h3>
+        <h3 id="thypography-small-text">Small text</h3>
         <p>
             For de-emphasizing inline or blocks of text, use the <code>&lt;small></code> tag to set text at 85% the size of the parent. Heading elements receive their own font-size for nested <code>&lt;small></code> elements.
         </p>
@@ -830,52 +844,54 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
         
 	<div class="col-md-3" role="complementary">
 		<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
-            <ul class="nav bs-docs-sidenav" id="menu-accordeon"> 
-                <li class=""> 
-                    <a href="#inputs">Inputs</a> 
-                    <ul class="nav"> 
-                        <li class=""><a class="" href="#inputs-optional-icons">With optional icons</a></li> 
-                        <li class=""><a class="" href="#inputs-input">Input</a></li> 
-                        <li class=""><a class="" href="#inputs-textarea">Textarea</a></li> 
+            <ul class="nav bs-docs-sidenav" id="menu-accordeon">
+                <li class="">
+                    <a class="first" href="#inputs">Inputs</a>
+                    <ul class="nav">
+                        <li class=""><a class="" href="#inputs-optional-icons">With optional icons</a></li>
+                        <li class=""><a class="" href="#inputs-input">Input</a></li>
+                        <li class=""><a class="" href="#inputs-textarea">Textarea</a></li>
                         <li class=""><a class="" href="#inputs-basic-block">Basic block</a></li>
-                        <li class=""><a class="" href="#inputs-basic-block">List</a></li> 
-                        <li class=""><a class="" href="#inputs-file-input">File input</a></li> 
+                        <li class=""><a class="" href="#inputs-basic-list">List</a></li>
+                        <li class=""><a class="" href="#inputs-file-input">File input</a></li>
                     </ul> 
                 </li> 
                 <li class=""> 
-                    <a href="#Buttons">Buttons</a> 
+                    <a class="first" href="#Buttons">Buttons</a>
                     <ul class="nav">
-                        <li class=""><a class="" href="">Button tags</a></li>
-                        <li class=""><a class="" href="">Sizes</a></li>
+                        <li class=""><a class="" href="#buttons-tags">Button tags</a></li>
+                        <li class=""><a class="" href="buttons-sizes">Sizes</a></li>
                         <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li>
-                        <li class=""><a class="" href="#">Button 3D</a></li>
-                        <li class=""><a class="" href="#">Icons</a></li>
-                        <li class=""><a class="" href="#buttons-pagination">Pagination</a></li> 
-                        <li class=""><a class="" href="#buttons-radio">Radio</a></li> 
-                        <li class=""><a class="" href="#buttons-checkBoxes">CheckBoxes</a></li> 
-                    </ul> 
+                        <li class=""><a class="" href="#buttons-3D">Button 3D</a></li>
+                        <li class=""><a class="" href="#buttons-icons">Icons</a></li>
+                        <li class=""><a class="" href="#buttons-pagination">Pagination</a></li>
+                        <li class=""><a class="" href="#buttons-radio">Radio</a></li>
+                        <li class=""><a class="" href="#buttons-checkBoxes">CheckBoxes</a></li>
+                        <li class=""><a class="" href="#buttons-switch-button">Switch button</a></li>
+                    </ul>
                 </li>
-                <li class=""> 
-                    <a href="#Control">Control</a> 
-                    <ul class="nav"> 
-                        <li class=""><a class="" href="#control-select">Selects</a></li> 
-                        <li class=""><a class="" href="#control-navbar">navbar</a></li> 
-                        <li class=""><a class="" href="#control-accordion">Accordion</a></li> 
-                        <li class=""><a class="" href="#control-table">Table</a></li> 
+                <li class="">
+                    <a class="first" href="#Control">Control</a>
+                    <ul class="nav">
+                        <li class=""><a class="" href="#control-selects">Selects</a></li>
+                        <li class=""><a class="" href="#control-navbar">navbar</a></li>
+                        <li class=""><a class="" href="#control-accordion">Accordion</a></li>
+                        <li class=""><a class="" href="#control-table">Table</a></li>
                         <li class=""><a class="" href="#control-attractive-rounded-input">Attractive Rounded input</a></li>
                     </ul> 
                 </li>
                 <li class=""> 
-                    <a href="#Control">Thypography</a> 
-                    <ul class="nav"> 
-                        <li class=""><a class="" href="#control-select">Headings</a></li> 
-                        <li class=""><a class="" href="#control-navbar">Marked text</a></li> 
-                        <li class=""><a class="" href="#control-accordion">Deleted text</a></li> 
-                        <li class=""><a class="" href="#control-table">Underlined text</a></li> 
-                        <li class=""><a class="" href="#control-attractive-rounded-input">Small text</a></li>
+                    <a class="first" href="#Thypography">Thypography</a>
+                    <ul class="nav">
+                        <li class=""><a class="" href="#thypography-headings">Headings</a></li>
+                        <li class=""><a class="" href="#thypography-marked-text">Marked text</a></li>
+                        <li class=""><a class="" href="#thypography-deleted-text">Deleted text</a></li>
+                        <li class=""><a class="" href="#thypography-underlined-text">Underlined text</a></li>
+                        <li class=""><a class="" href="#thypography-small-text">Small text</a></li>
                     </ul> 
                 </li>
             </ul>
+        
             <br>
             <a href="#top" class="back-to-top"> Back to top </a>
 		</nav> 

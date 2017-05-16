@@ -675,12 +675,11 @@ ul {
 .darkbo .sticky a, .sticky.darkbo a {
     color: #fff;
     display: block;
-    height: 45px;
     position: relative;
     text-align: center;
     line-height: 45px;
     width: 45px;
-    
+    height: 45px;
 }
 .darkbo .sticky a span, .sticky.darkbo a span {
     line-height: 18px;
