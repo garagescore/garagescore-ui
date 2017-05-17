@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr" class="js">
+<html lang="fr" class="darkbo js">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
 	<title>CSS . Garagescore</title>
 	<meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src="js/showcase.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/darkbo.css"/>
   	<link rel="stylesheet" href="showcase/showcase.css"/> 
 </head>
-<body class="darkbo" id="gs-dbo">
+<body id="gs-dbo">
 	<header class="affix">
 		<a href="#" class="v4-tease">Dark Back Office, Framework CSS</a>
 	</header>
     <br><br><br>
-    
     <div id="pig-animation">
-
-  <img id="fence-far" src="icons/bootstrap.png"/>
-  <img  id="pig-leg-left-back" src="icons/html5.png"/>
-  <img  id="pig-leg-left-front" src="icons/css3.png"/>
-  <img id="pig-body" src="icons/DBO.png" />
-  
-
-  
-
-
-</div><!--pig-animationr-->
+        <img id="fence-far" src="icons/bootstrap.png"/>
+        <img  id="pig-leg-left-back" src="icons/html5.png"/>
+        <img  id="pig-leg-left-front" src="icons/css3.png"/>
+        <img id="pig-body" src="icons/DBO.png" />
+    </div><!--pig-animationr-->
     
 	<div class="container bs-docs-container">
 	<div class="row">
@@ -38,7 +30,7 @@
             
             <h1 class="h1-anim">Darkbo.css</h1>
             <h4>
-                For any use of our Darkbo.css framework, just put the <code>.darkbo</code> class on the body of the page web or just on the element to styled.
+                For any use of our .css framework, just put the <code>.</code> class on the body of the page web or just on the element to styled.
             </h4>
         </div><!--.bs-docs-section-->  
         
@@ -67,9 +59,11 @@
 		</p>
 		<input type="text" class="form-control" placeholder="Text input">
         <br>
-        <pre class="pre-scrollable ">
+        <pre id="to-copy" class="pre-scrollable ">
 &lt;input type="text" class="form-control" placeholder="Text input"/&gt;
         </pre>
+        <button id="copy" type="button">Copy in clipboard</button>
+        
         <h4>Disabled state</h4>
         <p>
             Add the <code>disabled</code> boolean attribute on an input to prevent user interactions.
@@ -106,7 +100,7 @@
 		<h3>Basic block</h3>
 		<p>Use <code>pre</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
 		<p>You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
-        <pre class="pre-scrollable darkbo">
+        <pre class="pre-scrollable">
 {
 *_reference* *generic_xls_mmddyyyy*;
 "foreigns" {
@@ -295,7 +289,7 @@
 &lt;button type="button" class="btn btn-warning"&gt;&lt;span&gt;Renommer garage sur bime&lt;/span&gt;&lt;/button&gt;
 		</pre>
         
-        <h3 id="buttons-3D">Boutton 3D</h3>
+        <h3 id="buttons-3D">Button 3D</h3>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder</button>
         <br>
             <button class="btn btn-3d btn-3d-1 btn-default-3d">Créer un nouveau garage</button>
@@ -305,14 +299,14 @@
         </pre>
         <h3 id="buttons-icons">Icons</h3>
         <br>
-        <div class="darkbo-icon darkbo-icon-1">
+        <div class="icon icon-1">
             <a href="#" class="effet-1 icon-information"><i class="fa" aria-hidden="true"></i></a>
             <a href="#" class="effet-1 icon-branchement"><i class="fa" aria-hidden="true"></i></a>
             <a href="#" class="effet-1 icon-parametrage"><i class="fa" aria-hidden="true"></i></a>
         </div>
         <br>
         <pre class="pre-scrollable ">
-&lt;div class="darkbo-icon darkbo-icon-1">
+&lt;div class="icon icon-1">
 &lt;a href="#" class="effet-1 icon-information">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
 &lt;a href="#" class="effet-1 icon-branchement">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
 &lt;a href="#" class="effet-1 icon-parametrage">&lt;i class="fa" aria-hidden="true">&lt;/i>&lt;/a>
@@ -359,7 +353,7 @@
 		<input type="radio" name="abc" class="toggle">
 		<br><br>
 		<pre class="pre-scrollable ">
-&lt;input type="radio" name="abc" class="toggle darkbo" checked="checked"&gt;
+&lt;input type="radio" name="abc" class="toggle " checked="checked"&gt;
 		</pre>
         
 	</div><!--.bs-docs-section-->
@@ -430,7 +424,7 @@
 	<div class="bs-docs-section" id="control-navbar">
         
         <h3>Navbar</h3>
-		<ul class="nav nav-tabs">
+        <ul class="nav nav-tabs">
 			<li role="presentation" class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 					Garages
@@ -441,11 +435,11 @@
 					Emails <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="">Test de la génération...</a></li>
+					<li><a href="#">Test de la génération...</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="">Gestion des contacts</a></li>
+					<li><a href="#">Gestion des contacts</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="">Non-contactables</a></li>
+					<li><a href="#">Non-contactables</a></li>
 				</ul>
 			</li>
 			<li role="presentation" class="dropdown">
@@ -454,7 +448,7 @@
 				</a>
 			</li>
 			<li role="presentation" class="dropdown">
-				<a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 					Avis
 				</a>
 			</li>
@@ -473,7 +467,7 @@ Garages
 &lt;/a>
 &lt;/li>
 &lt;li role="presentation" class="dropdown">
-&lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+&lt;a class="dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Emails &lt;span class="caret">&lt;/span>
 &lt;/a>
 &lt;ul class="dropdown-menu">
@@ -485,12 +479,12 @@ Emails &lt;span class="caret">&lt;/span>
 &lt;/ul>
 &lt;/li>
 &lt;li role="presentation" class="dropdown">
-&lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+&lt;a class="dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Campagnes
 &lt;/a>
 &lt;/li>
 &lt;li role="presentation" class="dropdown">
-&lt;a class="dropdown-toggle darkbo" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+&lt;a class="dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 Avis
 &lt;/a>
 &lt;/li>
@@ -505,79 +499,28 @@ Rapports
 	<div class="bs-docs-section" id="control-accordion">
 		<h3>Accordion</h3>
 		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<label>Compte de facturation 1</label>
-					<div class="pull-right">
-						<span class="badge">2</span>
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">abonnements actifs<i class="fa" aria-hidden="true"></i></a>
-						<br>
-					</div>
-				</h4>
-			</div>
-			<div id="collapse1" class="panel-collapse collapse">
-			<button type="button" class="btn btn-default darkbo">Créer un compte sur PA</button>
-			<br><br><br><br>
-			<div class="panel-heading">
-    			<h3 class="panel-title">Garages et abonnements associés au compte</h3>
-  			</div>
-				<div class="panel-body">
-					<form class="form-inline">
-						<div class="form-group col-md-12">
-							<label class="col-md-2">Garage 1</label>
-							<span class="col-md-8">Abonnement#224 résilié le 19/04/2017</span>
-						</div>
-					</form>
-					<form class="form-inline">
-						<div class="form-group col-md-12">
-							<label class="col-md-2">Garage 1</label>
-							<span class="col-md-8">Abonnement#224 Créer le 20/04/2017</span>
-							<button type="button" class="btn btn-danger col-md-2">Résilier</button>
-						</div>
-					</form>
-					<form class="form-inline">
-						<div class="form-group col-md-12">
-							<label class="col-md-2">Garage 2</label>
-							<select class="form-control col-md-1">
-						  		<option>Choisir Offre</option>
-						  		<option>1</option>
-							</select>
-							<span class="col-md-2">Démarrer</span>
-							<input type="date" class="form-control col-md-1">
-							<button type="button" class="btn btn-default col-md-1 col-md-offset-1">Créer</button>
-						</div>
-					</form>
-					<form class="form-inline">
-						<div class="form-group col-md-12">
-							<select class="form-control col-md-4">
-						  		<option>Ajouter un garage</option>
-						  		<option>1</option>
-							</select>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<label>Compte de facturation 2</label>
-					<div class="pull-right">
-						<span class="badge">6</span>
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">abonnements actifs<i class="fa" aria-hidden="true"></i></a>
-						<br>
-					</div>
-				</h4>
-			</div>
-			<div id="collapse2" class="panel-collapse collapse">
-				<div class="panel-body">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-					commodo consequat.
-				</div>
-			</div>
-		</div>
+            <div class="acordeon">
+                <input id="acordeon-one" type="checkbox" class="inp-acordeon">
+                <label for="acordeon-one" class="lab-acordeon">Compte de facturation 1</label>  
+                <div class="acordeon-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                </div>
+            </div>
+            <div class="acordeon">
+                <input id="acordeon-two" type="checkbox" class="inp-acordeon">
+                <label for="acordeon-two" class="lab-acordeon">Compte de facturation 2</label>
+                <div class="acordeon-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                </div>
+            </div>
+            <div class="acordeon">
+                <input id="acordeon-three" type="checkbox" class="inp-acordeon">
+                    <label for="acordeon-three" class="lab-acordeon">Compte de facturation 3</label>
+                <div class="acordeon-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                </div>
+            </div>
+        </div>
 		<pre class="pre-scrollable ">
 &lt;div class="panel panel-default"&gt;
 &lt;div class="panel-heading"&gt;
@@ -738,10 +681,10 @@ commodo consequat.
         <p>
             For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark></code> tag.
         </p>
-        You can use the mark tag to <mark class="darkbo">Garagescore</mark> text.
+        You can use the mark tag to <mark>Garagescore</mark> text.
         <br><br>
         <pre class="pre-scrollable ">
-You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text.
+You can use the mark tag to &lt;mark> Garagescore &lt;/mark> text.
         </pre>
         
         <h3 id="thypography-deleted-text">Deleted text</h3>
@@ -778,7 +721,7 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
         The following snippet of text is <strong>rendered as bold text.</strong>
         <br><br>
         <pre class="pre-scrollable ">
-&lt;strong class="darkbo">rendered as bold text&lt;/strong>
+&lt;strong class="">rendered as bold text&lt;/strong>
         </pre>
         
         <h3>Italics</h3>
@@ -846,7 +789,8 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
 		<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
             <ul class="nav bs-docs-sidenav" id="menu-accordeon">
                 <li class="">
-                    <a class="first" href="#inputs">Inputs</a>
+                    <input id="m1" type="checkbox" class="inp-menu">
+                    <label for="menu-one" class="lab-menu">Inputs</label>
                     <ul class="nav">
                         <li class=""><a class="" href="#inputs-optional-icons">With optional icons</a></li>
                         <li class=""><a class="" href="#inputs-input">Input</a></li>
@@ -857,10 +801,10 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
                     </ul> 
                 </li> 
                 <li class=""> 
-                    <a class="first" href="#Buttons">Buttons</a>
+                    <label>Buttons</label>
                     <ul class="nav">
                         <li class=""><a class="" href="#buttons-tags">Button tags</a></li>
-                        <li class=""><a class="" href="buttons-sizes">Sizes</a></li>
+                        <li class=""><a class="" href="#buttons-sizes">Sizes</a></li>
                         <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li>
                         <li class=""><a class="" href="#buttons-3D">Button 3D</a></li>
                         <li class=""><a class="" href="#buttons-icons">Icons</a></li>
@@ -871,7 +815,7 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
                     </ul>
                 </li>
                 <li class="">
-                    <a class="first" href="#Control">Control</a>
+                    <label>Control</label>
                     <ul class="nav">
                         <li class=""><a class="" href="#control-selects">Selects</a></li>
                         <li class=""><a class="" href="#control-navbar">navbar</a></li>
@@ -881,7 +825,7 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
                     </ul> 
                 </li>
                 <li class=""> 
-                    <a class="first" href="#Thypography">Thypography</a>
+                    <label>Typography</label>
                     <ul class="nav">
                         <li class=""><a class="" href="#thypography-headings">Headings</a></li>
                         <li class=""><a class="" href="#thypography-marked-text">Marked text</a></li>
@@ -898,5 +842,6 @@ You can use the mark tag to &lt;mark class="darkbo"> Garagescore &lt;/mark> text
 	</div><!--.col-md-3 role="complementary"-->
 	</div><!--.row-->
 	</div><!--.container-fluid-->
+    <script src="js/showcase.js" type="text/javascript"></script>
 </body>
 </html>

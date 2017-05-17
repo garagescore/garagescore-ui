@@ -1,11 +1,7 @@
-/*@import '../showcase/style.less'*/
-html { font :   62.5% "Roboto Regular";}
-h1, h2, h3, h4, h5, h6, p, span, a, label, span, small {font-family: "Roboto Regular" !important;}
-body { font : 1.4rem "Roboto Regular"; } /* =14px */
-.gs-color {
-	color: #219ab5;
-}
-
+/***********Thypography********/
+.darkbo html, html.darkbo { font :   62.5% "Roboto Regular";}
+.darkbo h1, h1.darkbo, .darkbo h2, h2.darkbo, .darkbo h3, h3.darkbo, .darkbo h4, h4.darkbo, .darkbo h5, h5.darkbo, .darkbo h6, h6.darkbo, .darkbo p, p.darkbo, .darkbo a, a.darkbo, .darkbo label, label.darkbo, .darkbo span, span.darkbo, .darkbo small, small.darkbo {font-family: "Roboto Regular" !important;}
+.darkbo body, body.darkbo { font : 1.4rem "Roboto Regular"; } /* =14px */
 .darkbo .form-control, .form-control.darkbo, .darkbo figure pre, pre.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	color :#FFF;
@@ -37,40 +33,29 @@ body { font : 1.4rem "Roboto Regular"; } /* =14px */
 .darkbo .form-control:focus, form-control.darkbo:focus {
     color: #A1A9BF;
 }
-input:focus::-webkit-input-placeholder {
+.darkbo input:focus::-webkit-input-placeholder {
     color : #A1A9BF !important;
 }
-input:focus:-moz-placeholder {
+.darkbo input:focus:-moz-placeholder {
     color : #A1A9BF !important;  
 }
-input:focus::-moz-placeholder {
+.darkbo input:focus::-moz-placeholder {
     color : #A1A9BF !important;  
 } 
-input:focus:-ms-input-placeholder {  
+.darkbo input:focus:-ms-input-placeholder {  
     color : #A1A9BF !important;  
 }
-input::-webkit-input-placeholder {
+.darkbo input::-webkit-input-placeholder {
     color : white !important;
 }
-input:-moz-placeholder {
+.darkbo input:-moz-placeholder {
     color : white !important;  
 }
-input::-moz-placeholder {
+.darkbo input::-moz-placeholder {
     color : white !important;  
 } 
-input:-ms-input-placeholder {  
+.darkbo input:-ms-input-placeholder {  
     color : white !important;  
-}
-::-webkit-scrollbar {
-    width: 12px;
-}
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1);
 }
 .darkbo .form-group, .form-group.darkbo{
 	padding: 6px 12px;
@@ -92,7 +77,7 @@ input:-ms-input-placeholder {
     text-decoration: none;
     color: #488abc;
 }
-.js .box .form-control {
+.darkbo .box .form-control, .box .form-control.darkbo {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -113,12 +98,12 @@ input:-ms-input-placeholder {
     overflow: hidden;
     padding: 0.625rem 1.25rem;
 }
-.darkbo .form-control:focus, .form-control.darkbo:focus + label,
-.darkbo .box .form-control.has-focus + label {
+.darkbo .box .form-control:focus, .box .form-control.darkbo:focus + label,
+.darkbo .box .form-control.has-focus + label, .box .form-control.darkbo.has-focus + label {
     outline: 1px dotted #000;
     outline: -webkit-focus-ring-color auto 5px;
 }
-.darkbo .form-control + label svg, .form-control.darkbo + label svg {
+.darkbo .form-control + label svg, .box .form-control.darkbo + label svg {
     width: 1em;
     height: 1em;
     vertical-align: middle;
@@ -126,15 +111,15 @@ input:-ms-input-placeholder {
     margin-top: -0.25em;
     margin-right: 0.25em;
 }
-.darkbo .box .form-control:focus + label,
-.darkbo .box .form-control.has-focus + label,
-.darkbo .box .form-control + label:hover {
+.darkbo .box .form-control:focus + label, .box .form-control.darkbo:focus + label
+.darkbo .box .form-control.has-focus + label, .box .form-control.darkbo.has-focus + label
+.darkbo .box .form-control + label:hover, .box .form-control.darkbo + label:hover {
     color: #8c3844;
 }
 
 /*********************Bouttons**********************/
 
-.btn {
+.darkbo .btn, .btn.darkbo {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -149,32 +134,31 @@ input:-ms-input-placeholder {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.btn-3d {
+.darkbo .btn-3d, .btn-3d.darkbo {
 	display: block;
 	outline: 1px solid transparent;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
-.btn-3d:active {
+.darkbo .btn-3d:active, .btn-3d.darkbo:active {
 	background: #219ab5;
 }
-.btn-3d-1 {
+.darkbo .btn-3d-1, .btn-3d-1.darkbo {
 	background: #CCC;
 	color: #FFF;
 }
-
-.btn-3d-1:active {
+.darkbo .btn-3d-1:active, .btn-3d-1.darkbo:active {
 	background: #fff;
 }
-.btn-3d-1:after,
-.btn-3d-1:before {
+.darkbo .btn-3d-1:after, .btn-3d-1.darkbo:after, 
+.darkbo .btn-3d-1:before, .btn-3d-1.darkbo:before {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	left: 0;
 }
-.btn-3d-1:after {
+.darkbo .btn-3d-1:after, .btn-3d-1.darkbo:after {
 	top: -100%;
 	background: #219ab5;
 	color: #FFF;
@@ -193,7 +177,7 @@ input:-ms-input-placeholder {
 	transform-origin: 0% 100%;
 	transform: rotateX(90deg);
 }
-.btn-3d-1.btn-default-3d:hover {
+.darkbo .btn-3d-1.btn-default-3d:hover, .btn-3d-1.btn-default-3d.darkbo:hover {
 	background: #999;
     color: #FFF;
 	-webkit-transform-origin: 50% 100%;
@@ -416,49 +400,21 @@ input:-ms-input-placeholder {
     background: #FFF;
     border: solid 1px #219ab5;
 }
-.darkbo .panel-default, .panel-default.darkbo {
-	background-color: #FFF;
-}
-.darkbo .panel-heading, .panel-heading.darkbo {
-	background-image : linear-gradient(90deg, #272B42, #414968) !important;
-}
-.darkbo .panel-title, .panel-title.darkbo {
-	color: #FFF;	
-}
-.darkbo a[data-toggle="collapse"] {
-	line-height: 1;
-	color: #FFF;
-	text-decoration: none;
-}
-.darkbo a[data-toggle="collapse"] i:after {
-	content: '\f0d7';
-	margin-left: 10px;
-}
-.darkbo a[aria-expanded="true"] i:after {
-	content: '\f0da';
-	margin-left: 10px;
-}
+
+
 .darkbo .badge, .badge.darkbo {
 	background-color: #FFF !important;
 	color: #219ab5 !important;
 	font-weight: 600;
 }
-.darkbo .panel-collapse {
-	background-color: #CCC;
-}
-.darkbo .panel-body, .panel-body.darkbo {
-	color: #219ab5;
-	background-color: #FFF;
-}
-.panel-heading.darkbo h3{
-	color: #FFF;
-}
+
 .darkbo select.form-control:focus option, select.form-control.darkbo:focus option {
 	color: #219ab5;
 	font :  1em "Roboto Regular";
 }
-pre.pre-scrollable {
+.darkbo pre.pre-scrollable, pre.pre-scrollable.darkbo {
 	max-height: 200px;
+	color: #219ab5;
 }
 .darkbo .pagination a, .pagination.darkbo a {
 	background-image : linear-gradient(90deg, #272B42, #414968);
@@ -470,7 +426,6 @@ pre.pre-scrollable {
 	line-height: 1;
 	border-bottom: 2px solid #FFF;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .darkbo .dropdown-toggle, .dropdown-toggle.darkbo {
 	transition: all 0.4s;
@@ -626,39 +581,38 @@ pre.pre-scrollable {
 .darkbo .form-control.marques, .form-control.marques.darkbo {
     border-radius: 20px 0 0 20px;   
 }
-.social {
+.darkbo .social, .social.darkbo {
     width: 100%;
     height: auto;
     padding: 1rem 0;
 }
-.fa-twitter {
+.darkbo .fa-twitter, .fa-twitter.darkbo {
     color: #4099FF;
 }
-.fa-facebook {
+.darkbo .fa-facebook, .fa-facebook.darkbo {
     color: #3B5998;
 }
 
-.fa-youtube-play {
+.darkbo .fa-youtube-play, .fa-youtube-play.darkbo {
     color: #e52d27;
 }
-
-.fa-rss {
+.darkbo .fa-rss, .fa-rss.darkbo {
     color: #FF6600;
 }
-.fa-linkedin {
+.darkbo .fa-linkedin, .fa-linkedin.darkbo {
     color: #007bb6;
 }
-.fa {
+.darkbo .fa, .fa.darkbo {
     opacity: 0.7;
     transition: 1s;
     -webkit-transition: 1s;
 }
-.fa:hover{
+.darkbo .fa:hover, .fa.darkbo:hover{
     opacity: 1;
     transition: 1s;
     -webkit-transition: 1s;
 }
-ul {
+.darkbo ul, ul.darkbo {
    list-style: none;
    margin: 0;
    padding: 0;
@@ -713,14 +667,14 @@ ul {
 }
 
 /* Effect 3 */
-.darkbo-icon .effet-1 {
+.darkbo .icon .effet-1, .icon .effet-1.darkbo {
     box-shadow: 0 0 0 2px #CCC;
 	-webkit-transition: color 0.1s;
 	-moz-transition: color 0.1s;
 	transition: color 0.1s;
 }
 
-.darkbo-icon .effet-1:after {
+.darkbo .icon .effet-1:after, .icon .effet-1.darkbo:after {
 	top: -2px;
 	left: -2px;
 	padding: 2px;
@@ -730,27 +684,28 @@ ul {
 	-moz-transition: -moz-transform 0.2s, opacity 0.3s;
 	transition: transform 0.2s, opacity 0.3s;
 }
-.icon-information i:before {
+.darkbo .icon-information i:before, .icon-information.darkbo i:before {
 	content: "\f129";
 }
-.icon-branchement i:before {
+.darkbo .icon-branchement i:before, .icon-branchement.darkbo i:before {
 	content: "\f20e";
 }
-.icon-parametrage i:before {
+.darkbo .icon-parametrage i:before, .icon-parametrage.darkbo i:before {
 	content: "\f013";
 }
-.icon-information i, .icon-branchement i, .icon-parametrage i  {
+.darkbo .icon-information i, .darkbo .icon-branchement i, .darkbo .icon-parametrage i, 
+.icon-information.darkbo i, .icon-branchement.darkbo i, .icon-parametrage.darkbo i {
     padding: 1rem .7rem;
 }
 /*Icon*/
 
-.darkbo-icon-1 .effet-1 {
+.darkbo .icon-1 .effet-1, .icon-1 .effet-1.darkbo {
 	color: #999;
 }
-.darkbo-icon-1 .effet-1:hover {
+.darkbo .icon-1 .effet-1:hover, .icon-1 .effet-1.darkbo:hover {
 	color: #FFF;
 }
-.darkbo-icon-1 .effet-1:after {
+.darkbo .icon-1 .effet-1:after, .icon-1 .effet-1.darkbo:after {
 	-webkit-transform: scale(1.3);
 	-moz-transform: scale(1.3);
 	-ms-transform: scale(1.3);
@@ -758,14 +713,14 @@ ul {
 	opacity: 0;
 }
 
-.darkbo-icon-1 .effet-1:hover:after {
+.darkbo .icon-1 .effet-1:hover:after, .icon-1 .effet-1.darkbo:hover:after {
 	-webkit-transform: scale(.9);
 	-moz-transform: scale(.9);
 	-ms-transform: scale(.9);
 	transform: scale(.9);
 	opacity: 1;
 }
-.effet-1 {
+.darkbo .effet-1, .effet-1.darkbo {
 	display: inline-block;
 	font-size: 25px;
 	cursor: pointer;
@@ -779,7 +734,7 @@ ul {
     margin-right: 10px;
 }
 
-.effet-1:after {
+.darkbo .effet-1:after, .effet-1.darkbo:after {
 	pointer-events: none;
 	position: absolute;
 	width: 100%;
@@ -791,7 +746,7 @@ ul {
 	box-sizing: content-box;
 }
 
-.effet-1:before {
+.darkbo .effet-1:before, .effet-1.darkbo:before {
 	speak: none;
 	font-size: 40px;
 	line-height: 22px;
@@ -805,9 +760,77 @@ ul {
 .darkbo mark, mark.darkbo {
     background-color: rgba(32, 154, 181, 0.3);
 }
-.darkbo del, del.darkbo {
-    
-}
 .darkbo strong, strong.darkbo {
     font-weight: 900;
+}
+/* Acordeon styles */
+.darkbo .acordeon, .acordeon.darkbo {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #414968;
+    overflow: hidden;
+}
+.darkbo .inp-acordeon, .inp-acordeon.darkbo {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.darkbo .lab-acordeon, .lab-acordeon.darkbo {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    border-top: 5px solid #414968;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+}
+.darkbo .acordeon-content, .acordeon-content.darkbo {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgba(65, 73, 104, 0.3);
+    color: #FFF;
+    -webkit-transition: max-height .5s;
+    -o-transition: max-height .5s;
+    transition: max-height .5s;
+    -webkit-transition: opacity .7s;
+    -o-transition: opacity .7s;
+    transition: opacity .7s;
+   
+}
+.darkbo .acordeon-content p, .acordeon-content.darkbo p {
+    margin: 1em;
+}
+/* :checked */
+.darkbo .inp-acordeon:checked ~ .acordeon-content, .inp-acordeon.darkbo:checked ~ .acordeon-content  {
+    max-height: 10em;
+    opacity: 1;
+}
+/* Icon */
+.darkbo .lab-acordeon::after, .lab-acordeon.darkbo::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.darkbo .inp-acordeon[type=checkbox] + label::after, .inp-acordeon[type=checkbox].darkbo + label::after {
+    content: "+";
+}
+.darkbo .inp-acordeon[type=radio] + label::after, .inp-acordeon[type=radio].darkbo + label::after {
+    content: "\25BC";
+}
+.darkbo .inp-acordeon[type=checkbox]:checked + label::after, .inp-acordeon[type=checkbox].darkbo:checked + label::after {
+    transform: rotate(315deg);
+}
+.darkbo .inp-acordeon[type=radio]:checked + label::after, .inp-acordeon[type=radio].darkbo:checked + label::after {
+    transform: rotateX(180deg);
 }

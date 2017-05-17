@@ -31,19 +31,19 @@ body {
 }
 @keyframes colorchangebody
     {
-      0%   {background: rgba(32, 154, 181, 0.3);}
-      25%  {background: rgba(135, 196, 188, 0.3);}
-      50%  {background: rgba(251, 231, 180, 0.3);}
-      75%  {background: rgba(240, 118, 47, 0.3);}
-      100% {background: rgba(32, 154, 181, 0.3);}
+      0%   {background: rgba(32, 154, 181, 0.4);}
+      25%  {background: rgba(135, 196, 188, 0.4);}
+      50%  {background: rgba(251, 231, 180, 0.4);}
+      75%  {background: rgba(240, 118, 47, 0.4);}
+      100% {background: rgba(32, 154, 181, 0.4);}
 }
 @-webkit-keyframes colorchangebody 
     {
-      0%   {background: rgba(32, 154, 181, 0.3);}
-      25%  {background: rgba(135, 196, 188, 0.3);}
-      50%  {background: rgba(251, 231, 180, 0.3);}
-      75%  {background: rgba(240, 118, 47, 0.3);}
-      100% {background: rgba(32, 154, 181, 0.3);}
+      0%   {background: rgba(32, 154, 181, 0.4);}
+      25%  {background: rgba(135, 196, 188, 0.4);}
+      50%  {background: rgba(251, 231, 180, 0.4);}
+      75%  {background: rgba(240, 118, 47, 0.4);}
+      100% {background: rgba(32, 154, 181, 0.4);}
 }
 header {
     width: 100%;
@@ -76,9 +76,6 @@ h3:not(.not) {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-pre.pre-scrollable {
-	color: #219ab5;
 }
 .bs-callout-warning {
     border-left: 5px solid #a44852;
@@ -118,9 +115,6 @@ pre.pre-scrollable {
 #menu-accordeon ul li a, #menu-accordeon li:hover li a {
     font-size: 1em;
 }
-#menu-accordeon li:hover li {
-    max-height: 15em;
-}
 #menu-accordeon li:hover .first {
     border-left: 2px solid #000;
     padding-left: 5px;
@@ -128,13 +122,21 @@ pre.pre-scrollable {
 #menu-accordeon li ul li {
     padding-left: 20px;
 }
+.darkbo .inp-menu {
+    position: absolute;
+    opacity: 1;
+    z-index: 999;
+}
+
+.inp-menu:checked #menu-accordeon {
+    background: #FFF !important;
+}
 .back-to-top {  
     font-size: 1.2em;
 }
 .back-to-top:hover {
     text-decoration: none;
 }
-
 /***************** FADE IN *******************/
 
        body {
@@ -222,4 +224,17 @@ pre.pre-scrollable {
 #pig-tail, #pig-ear{
     animation: ear-tail 0.45s linear 0s infinite alternate;
 }
-
+/**********SCROLLBAR**************/
+::-webkit-scrollbar {
+    width: 12px;
+     -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1);
+}
