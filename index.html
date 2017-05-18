@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/darkbo.css"/>
   	<link rel="stylesheet" href="showcase/showcase.css"/> 
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 </head>
 <body id="gs-dbo">
 	<header class="affix">
@@ -21,18 +23,290 @@
         <img  id="pig-leg-left-front" src="icons/css3.png"/>
         <img id="pig-body" src="icons/DBO.png" />
     </div><!--pig-animationr-->
-    
 	<div class="container bs-docs-container">
 	<div class="row">
 	<div class="col-md-9">
         
-        <div class="bs-docs-section" id="inputs">
-            
-            <h1 class="h1-anim">Darkbo.css</h1>
-            <h4>
-                For any use of our .css framework, just put the <code>.</code> class on the body of the page web or just on the element to styled.
-            </h4>
+        <div class="bs-docs-section">
+            <h1 class="h1-anim not">Overview</h1>
+            <h3 class="not">
+                Global CSS settings, fundamental HTML elements styled and enhanced with <code>.darkbo</code> class, and Bootstrap grid system.
+            </h3>
+            <h2 class="not">HTML5 doctype</h2>
+            <p>
+                Darkbo framework require the use of the HTML5 doctype. Include it at the beginning of all your pages.
+            </p>
+            <pre class="pre-scrollable">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+    ...
+&lt;/html>
+            </pre>
+            <h2 class="not">Typography and links</h2><br>
+            <p>
+                <strong>Darkbo.css</strong> sets basic global display, typography, and link styles. Specifically, we:
+                <br><br>
+                Set <code>background-image: linear-gradient(180deg, #000 60%, #414968);</code> on the <code>body</code>.<br><br>
+                Use the <code>font-family : "Roboto Regular";</code>.<br><br>
+                For any use of our Darkbo.css framework, just put the <code>.darkbo</code> class on the body of the page web or just on the element to styled.
+            </p>       
+            <h2 class="not">Showcase.css</h2>
+            <p>For improved cross-browser rendering, we use <code>Showcase.css</code>.</p>
+            <h2 class="not">Containers</h2>
+            <p>Use <code>.container</code> for a responsive fixed width container.</p>
+            <pre class="pre-scrollable">
+&lt;div class="container">
+  ...
+&lt;/div>
+            </pre>
+            <p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of your viewport.</p>
+            <pre class="pre-scrollable">
+&lt;div class="container-fluid">
+  ...
+&lt;/div>
+            </pre>
+            <h2 class="not">Grid system</h2>
+            <p>
+                Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
+            </p>
         </div><!--.bs-docs-section-->  
+        
+        <div class="bs-docs-section" id="Thypography">
+        
+        <h2 id="thypography-headings">Typography</h2>
+        <h3>Headings</h3>
+        <h1>h1. Garagescore heading <small>Secondary text</small></h1>
+        <h2 class="not">h2. Garagescore heading <small>Secondary text</small></h2>
+        <h3 class="not">h3. Garagescore heading <small>Secondary text</small></h3>
+        <h4>h4. Garagescore heading <small>Secondary text</small></h4>
+        <h5>h5. Garagescore heading <small>Secondary text</small></h5>
+        <h6>h6. Garagescore heading <small>Secondary text</small></h6>
+        <br>
+        <p>
+            Create lighter, secondary text in any heading with a generic <code>&lt;small></code> tag or the <code>.small</code> class.
+        </p>
+        <pre class="pre-scrollable ">
+&lt;h1>h1. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h1>
+&lt;h2>h2. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h2>
+&lt;h3>h3. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h3>
+&lt;h4>h4. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h4>
+&lt;h5>h5. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h5>
+&lt;h6>h6. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h6>
+        </pre>
+        <h3 id="thypography-marked-text">Marked text</h3>
+        <p>
+            For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark></code> tag.
+        </p>
+        You can use the mark tag to <mark>Garagescore</mark> text.
+        <br><br>
+        <pre class="pre-scrollable ">
+You can use the mark tag to &lt;mark> Garagescore &lt;/mark> text.
+        </pre>
+        
+        <h3 id="thypography-deleted-text">Deleted text</h3>
+        <p>For indicating blocks of text that have been deleted use the <code>&lt;del></code> tag.</p>
+        <del>This line of text is meant to be treated as deleted text.</del>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;del>This line of text is meant to be treated as deleted text.&lt;/del> 
+        </pre>
+        
+        <h3 id="thypography-underlined-text">Underlined text</h3>
+        <p>To underline text use the <code>&lt;u></code> tag.</p>
+        <u>This line of text will render as underlined</u>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;u>This line of text will render as underlined&lt;/u>  
+        </pre>
+        
+        <h3 id="thypography-small-text">Small text</h3>
+        <p>
+            For de-emphasizing inline or blocks of text, use the <code>&lt;small></code> tag to set text at 85% the size of the parent. Heading elements receive their own font-size for nested <code>&lt;small></code> elements.
+        </p>
+        <p>
+            You may alternatively use an inline element with .small in place of any <code>&lt;small></code>.
+        </p>
+        <small>This line of text is meant to be treated as fine print.</small>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;small>This line of text is meant to be treated as fine print.&lt;/small>
+        </pre>
+        
+        <h3>Bold</h3>
+        <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+        The following snippet of text is <strong>rendered as bold text.</strong>
+        <br><br>
+        <pre class="pre-scrollable ">
+&lt;strong class="">rendered as bold text&lt;/strong>
+        </pre>
+        
+        <h3>Italics</h3>
+        <p>For emphasizing a snippet of text with italics.</p>
+        <p>The following snippet of text is rendered as <em>italicized text.</em></p>
+        <br>
+        <pre class="pre-scrollable ">
+&lt;em>italicized text&lt;/em>   
+        </pre>
+        
+        <h3>Addresses</h3>
+        <p>
+            Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with <code>&lt;br></code>.
+        </p>
+        <br>
+        <address>
+            <strong>Full Name</strong><br>
+            <a href="mailto:#">first.last@example.com</a>
+        </address>
+        <pre class="pre-scrollable ">
+&lt;address>
+ &lt;strong>Full Name&lt;/strong>&lt;br>
+ &lt;a href="mailto:#">first.last@example.com&lt;/a>
+&lt;/address>
+        </pre>
+        <h3>Lists</h3>
+        <h4>Unordered</h4>
+        <p>A list of items in which the order does not explicitly matter.</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet
+                    <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                    </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+            </ul>
+            <pre class="pre-scrollable ">
+&lt;ul>
+ &lt;li>...&lt;/li>
+&lt;/ul>
+            </pre>
+            <h4>Ordered</h4>
+            <p>A list of items in which the order does explicitly matter.</p>
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit</li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+            </ol>
+            <pre class="pre-scrollable ">
+&lt;ol>
+ &lt;li>...&lt;/li>
+&lt;/ol>              
+            </pre>
+            <h4>Unstyled</h4>
+            <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+            <ul class="list-unstyled">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet
+                    <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                    </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+            </ul>
+            <pre class="pre-scrollable ">
+&lt;ul class="list-unstyled">
+  &lt;li>...&lt;/li>
+&lt;/ul>
+            </pre>
+    </div><!--.bs-docs-section-->
+       
+    <div class="bs-docs-section" id="control-table">
+        <h2>Tables</h2>
+		<h3>Basic exemple</h3>
+		<p>For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table></code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+        <br>
+        <table class="table">
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>NONVALIDElesbadianes@aol.com</td>
+				<td>BOUNCE</td>
+				<td>28/03/2017</td>
+			</tr>
+			<tr>
+				<td>Hatemberrqhmoun@gmx.fr</td>
+				<td>DÉSABONNEMENT</td>
+				<td>28/03/2017</td>
+			</tr>
+			<tr>
+				<td>pahache89@wanadoo.fr</td>
+				<td>BOUNCE</td>
+				<td>28/03/2017</td>
+			</tr>
+		</table>
+		<pre class="pre-scrollable ">
+&lt;table class="table">
+&lt;tr>
+&lt;th>Firstname&lt;/th>
+&lt;th>Lastname&lt;/th>
+&lt;th>Email&lt;/th>
+&lt;/tr>
+&lt;tr>
+&lt;td>NONVALIDElesbadianes@aol.com&lt;/td>
+&lt;td>BOUNCE&lt;/td>
+&lt;td>28/03/2017&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Hatemberrqhmoun@gmx.fr&lt;/td>
+&lt;td>DÉSABONNEMENT&lt;/td>
+&lt;td>28/03/2017&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pahache89@wanadoo.fr&lt;/td>
+&lt;td>BOUNCE&lt;/td>
+&lt;td>28/03/2017&lt;/td>
+&lt;/tr>
+&lt;/table>
+		</pre>
+        <h3>Striped rows</h3>
+        <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody></code>.</p>
+        <div class="bs-callout bs-callout-default">
+            <h4>Cross-browser compatibility</h4>
+            <p>
+                Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.
+            </p>
+        </div>
+        <table class="table table-striped">
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>NONVALIDElesbadianes@aol.com</td>
+				<td>BOUNCE</td>
+				<td>28/03/2017</td>
+			</tr>
+			<tr>
+				<td>Hatemberrqhmoun@gmx.fr</td>
+				<td>DÉSABONNEMENT</td>
+				<td>28/03/2017</td>
+			</tr>
+			<tr>
+				<td>pahache89@wanadoo.fr</td>
+				<td>BOUNCE</td>
+				<td>28/03/2017</td>
+			</tr>
+		</table>
+	</div><!--.bs-docs-section-->    
         
 	<div class="bs-docs-section" id="inputs-optional-icons">
         <h2>Inputs</h2>
@@ -42,7 +316,7 @@
   			<input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon1">
 		</div>
 		<br>
-        <pre class="pre-scrollable ">
+        <pre class="pre-scrollable">
 &lt;div class="input-group">
 &lt;span class="input-group-addon" id="basic-addon1"&gt;&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon1"/&gt;
@@ -297,6 +571,41 @@
         <pre class="pre-scrollable ">
 &lt;button class="btn btn-3d btn-3d-1 btn-default-3d">Sauvegarder&lt;/button>
         </pre>
+        <h3>Popup</h3>
+        <br>
+        <a class="button-popup" href="#popup1">Let me Pop up</a>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Garagescore Modal</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales convallis malesuada. Ut id lacus ultrices, eleifend arcu sollicitudin, dignissim ex. Sed in est convallis, feugiat dolor quis, feugiat urna. Vivamus porta elit at pretium tristique. Vestibulum ultrices tortor viverra augue semper, iaculis suscipit ipsum auctor. Proin mollis metus sed molestie auctor. Suspendisse volutpat fermentum metus vitae euismod.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales convallis malesuada. Ut id lacus ultrices, eleifend arcu sollicitudin, dignissim ex. Sed in est convallis, feugiat dolor quis, feugiat urna. Vivamus porta elit at pretium tristique. Vestibulum ultrices tortor viverra augue semper, iaculis suscipit ipsum auctor. Proin mollis metus sed molestie auctor. Suspendisse volutpat fermentum metus vitae euismod.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales convallis malesuada. Ut id lacus ultrices, eleifend arcu sollicitudin, dignissim ex. Sed in est convallis, feugiat dolor quis, feugiat urna. Vivamus porta elit at pretium tristique. Vestibulum ultrices tortor viverra augue semper, iaculis suscipit ipsum auctor. Proin mollis metus sed molestie auctor. Suspendisse volutpat fermentum metus vitae euismod.
+                </div>
+                <div class="action-block">
+                    <button type="button" class="btn btn-default">Save</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <pre class="pre-scrollable ">
+&lt;a class="button-popup" href="#popup1">Let me Pop up&lt;/a>
+&lt;div id="popup1" class="overlay">
+&lt;div class="popup">
+&lt;h2>Garagescore Modal&lt;/h2>
+&lt;a class="close" href="#">&times;&lt;/a>
+&lt;div class="content">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales convallis malesuada. Ut id lacus ultrices, eleifend arcu sollicitudin, dignissim ex. Sed in est convallis, feugiat dolor quis, feugiat urna. Vivamus porta elit at pretium tristique. Vestibulum ultrices tortor viverra augue semper, iaculis suscipit ipsum auctor. Proin mollis metus sed molestie auctor. Suspendisse volutpat fermentum metus vitae euismod.
+&lt;/div>
+&lt;div class="action-block">
+&lt;button type="button" class="btn btn-default">Save&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+        </pre>
+        
+        
         <h3 id="buttons-icons">Icons</h3>
         <br>
         <div class="icon icon-1">
@@ -426,34 +735,34 @@
         <h3>Navbar</h3>
         <ul class="nav nav-tabs">
 			<li role="presentation" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#link" role="button" aria-haspopup="true" aria-expanded="false">
 					Garages
 				</a>
 			</li>
 			<li role="presentation" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">
 					Emails <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="#">Test de la génération...</a></li>
+					<li><a href="">Test de la génération...</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="#">Gestion des contacts</a></li>
+					<li><a href="">Gestion des contacts</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="#">Non-contactables</a></li>
+					<li><a href="">Non-contactables</a></li>
 				</ul>
 			</li>
 			<li role="presentation" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#link" role="button" aria-haspopup="true" aria-expanded="false">
 					Campagnes
 				</a>
 			</li>
 			<li role="presentation" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#link" role="button" aria-haspopup="true" aria-expanded="false">
 					Avis
 				</a>
 			</li>
 			<li role="presentation" class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#link" role="button" aria-haspopup="true" aria-expanded="false">
 					Rapports
 				</a>
 			</li>
@@ -570,58 +879,6 @@ commodo consequat.
         
 	</div><!--.col-md-6-->
         
-	<div class="bs-docs-section" id="control-table">
-        
-		<h3>Table</h3>
-		<p>A basic Bootstrap table has a light padding and only horizontal dividers.The <code>.table</code> class adds basic styling to a table:</p>
-<table class="table">
-			<tr>
-				<th>Firstname</th>
-				<th>Lastname</th>
-				<th>Email</th>
-			</tr>
-			<tr>
-				<td>NONVALIDElesbadianes@aol.com</td>
-				<td>BOUNCE</td>
-				<td>28/03/2017</td>
-			</tr>
-			<tr>
-				<td>Hatemberrqhmoun@gmx.fr</td>
-				<td>DÉSABONNEMENT</td>
-				<td>28/03/2017</td>
-			</tr>
-			<tr>
-				<td>pahache89@wanadoo.fr</td>
-				<td>BOUNCE</td>
-				<td>28/03/2017</td>
-			</tr>
-		</table>
-		<pre class="pre-scrollable ">
-&lt;table class="table">
-&lt;tr>
-&lt;th>Firstname&lt;/th>
-&lt;th>Lastname&lt;/th>
-&lt;th>Email&lt;/th>
-&lt;/tr>
-&lt;tr>
-&lt;td>NONVALIDElesbadianes@aol.com&lt;/td>
-&lt;td>BOUNCE&lt;/td>
-&lt;td>28/03/2017&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Hatemberrqhmoun@gmx.fr&lt;/td>
-&lt;td>DÉSABONNEMENT&lt;/td>
-&lt;td>28/03/2017&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>pahache89@wanadoo.fr&lt;/td>
-&lt;td>BOUNCE&lt;/td>
-&lt;td>28/03/2017&lt;/td>
-&lt;/tr>
-&lt;/table>
-		</pre>
-        
-	</div><!--.bs-docs-section-->
         
     <div class="bs-docs-section">
         
@@ -652,101 +909,6 @@ commodo consequat.
 &lt;/div>
         </pre>
         
-    </div><!--.bs-docs-section-->
-        
-    <div class="bs-docs-section" id="Thypography">
-        
-        <h2 id="thypography-headings">Typography</h2>
-        <h3>Headings</h3>
-        <br>
-        <h1>h1. Garagescore heading <small>Secondary text</small></h1>
-        <h2 class="not">h2. Garagescore heading <small>Secondary text</small></h2>
-        <h3 class="not">h3. Garagescore heading <small>Secondary text</small></h3>
-        <h4>h4. Garagescore heading <small>Secondary text</small></h4>
-        <h5>h5. Garagescore heading <small>Secondary text</small></h5>
-        <h6>h6. Garagescore heading <small>Secondary text</small></h6>
-        <br>
-        <p>
-            Create lighter, secondary text in any heading with a generic <code>&lt;small></code> tag or the <code>.small</code> class.
-        </p>
-        <pre class="pre-scrollable ">
-&lt;h1>h1. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h1>
-&lt;h2>h2. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h2>
-&lt;h3>h3. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h3>
-&lt;h4>h4. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h4>
-&lt;h5>h5. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h5>
-&lt;h6>h6. Garagescore heading &lt;small>Secondary text&lt;/small>&lt;/h6>
-        </pre>
-        <h3 id="thypography-marked-text">Marked text</h3>
-        <p>
-            For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark></code> tag.
-        </p>
-        You can use the mark tag to <mark>Garagescore</mark> text.
-        <br><br>
-        <pre class="pre-scrollable ">
-You can use the mark tag to &lt;mark> Garagescore &lt;/mark> text.
-        </pre>
-        
-        <h3 id="thypography-deleted-text">Deleted text</h3>
-        <p>For indicating blocks of text that have been deleted use the <code>&lt;del></code> tag.</p>
-        <del>This line of text is meant to be treated as deleted text.</del>
-        <br><br>
-        <pre class="pre-scrollable ">
-&lt;del>This line of text is meant to be treated as deleted text.&lt;/del> 
-        </pre>
-        
-        <h3 id="thypography-underlined-text">Underlined text</h3>
-        <p>To underline text use the <code>&lt;u></code> tag.</p>
-        <u>This line of text will render as underlined</u>
-        <br><br>
-        <pre class="pre-scrollable ">
-&lt;u>This line of text will render as underlined&lt;/u>  
-        </pre>
-        
-        <h3 id="thypography-small-text">Small text</h3>
-        <p>
-            For de-emphasizing inline or blocks of text, use the <code>&lt;small></code> tag to set text at 85% the size of the parent. Heading elements receive their own font-size for nested <code>&lt;small></code> elements.
-        </p>
-        <p>
-            You may alternatively use an inline element with .small in place of any <code>&lt;small></code>.
-        </p>
-        <small>This line of text is meant to be treated as fine print.</small>
-        <br><br>
-        <pre class="pre-scrollable ">
-&lt;small>This line of text is meant to be treated as fine print.&lt;/small>
-        </pre>
-        
-        <h3>Bold</h3>
-        <p>For emphasizing a snippet of text with a heavier font-weight.</p>
-        The following snippet of text is <strong>rendered as bold text.</strong>
-        <br><br>
-        <pre class="pre-scrollable ">
-&lt;strong class="">rendered as bold text&lt;/strong>
-        </pre>
-        
-        <h3>Italics</h3>
-        <p>For emphasizing a snippet of text with italics.</p>
-        <p>The following snippet of text is rendered as <em>italicized text.</em></p>
-        <br>
-        <pre class="pre-scrollable ">
-&lt;em>italicized text&lt;/em>   
-        </pre>
-        
-        <h3>Addresses</h3>
-        <p>
-            Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with <code>&lt;br></code>.
-        </p>
-        <br>
-        <address>
-            <strong>Full Name</strong><br>
-            <a href="mailto:#">first.last@example.com</a>
-        </address>
-        <pre class="pre-scrollable ">
-&lt;address>
-&lt;strong>Full Name&lt;/strong>&lt;br>
-&lt;a href="mailto:#">first.last@example.com&lt;/a>
-&lt;/address>
-        </pre>
     </div><!--.bs-docs-section-->
         
     <div class="bs-docs-section">
@@ -786,56 +948,88 @@ You can use the mark tag to &lt;mark> Garagescore &lt;/mark> text.
 	</div><!--.col-md-9-->
         
 	<div class="col-md-3" role="complementary">
-		<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
-            <ul class="nav bs-docs-sidenav" id="menu-accordeon">
-                <li class="">
-                    <input id="m1" type="checkbox" class="inp-menu">
-                    <label for="menu-one" class="lab-menu">Inputs</label>
-                    <ul class="nav">
-                        <li class=""><a class="" href="#inputs-optional-icons">With optional icons</a></li>
-                        <li class=""><a class="" href="#inputs-input">Input</a></li>
-                        <li class=""><a class="" href="#inputs-textarea">Textarea</a></li>
-                        <li class=""><a class="" href="#inputs-basic-block">Basic block</a></li>
-                        <li class=""><a class="" href="#inputs-basic-list">List</a></li>
-                        <li class=""><a class="" href="#inputs-file-input">File input</a></li>
-                    </ul> 
-                </li> 
-                <li class=""> 
-                    <label>Buttons</label>
-                    <ul class="nav">
-                        <li class=""><a class="" href="#buttons-tags">Button tags</a></li>
-                        <li class=""><a class="" href="#buttons-sizes">Sizes</a></li>
-                        <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li>
-                        <li class=""><a class="" href="#buttons-3D">Button 3D</a></li>
-                        <li class=""><a class="" href="#buttons-icons">Icons</a></li>
-                        <li class=""><a class="" href="#buttons-pagination">Pagination</a></li>
-                        <li class=""><a class="" href="#buttons-radio">Radio</a></li>
-                        <li class=""><a class="" href="#buttons-checkBoxes">CheckBoxes</a></li>
-                        <li class=""><a class="" href="#buttons-switch-button">Switch button</a></li>
-                    </ul>
-                </li>
-                <li class="">
-                    <label>Control</label>
-                    <ul class="nav">
-                        <li class=""><a class="" href="#control-selects">Selects</a></li>
-                        <li class=""><a class="" href="#control-navbar">navbar</a></li>
-                        <li class=""><a class="" href="#control-accordion">Accordion</a></li>
-                        <li class=""><a class="" href="#control-table">Table</a></li>
-                        <li class=""><a class="" href="#control-attractive-rounded-input">Attractive Rounded input</a></li>
-                    </ul> 
-                </li>
-                <li class=""> 
-                    <label>Typography</label>
-                    <ul class="nav">
-                        <li class=""><a class="" href="#thypography-headings">Headings</a></li>
-                        <li class=""><a class="" href="#thypography-marked-text">Marked text</a></li>
-                        <li class=""><a class="" href="#thypography-deleted-text">Deleted text</a></li>
-                        <li class=""><a class="" href="#thypography-underlined-text">Underlined text</a></li>
-                        <li class=""><a class="" href="#thypography-small-text">Small text</a></li>
-                    </ul> 
-                </li>
-            </ul>
-        
+		<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix ac-container">
+                <div>
+					<input id="ac-1" name="accordion-1" type="radio">
+					<label for="ac-1">Overview</label>
+					<article class="ac-links">
+						<ul class="nav-menu-droite">
+                            <li class=""><a class="" href="#">HTML5 doctype</a></li>
+                            <li class=""><a class="" href="#">Typography and links</a></li>
+                            <li class=""><a class="" href="#">Showcase.css</a></li>
+                            <li class=""><a class="" href="#">Containers</a></li>
+                            <li class=""><a class="" href="#">Grid system</a></li>
+                        </ul>
+					</article>
+				</div>
+                <div>
+					<input id="ac-2" name="accordion-1" type="radio">
+					<label for="ac-2">Typography</label>
+					<article class="ac-links">
+						<ul class="nav-menu-droite">
+                            <li class=""><a class="" href="#thypography-headings">Headings</a></li>
+                            <li class=""><a class="" href="#thypography-marked-text">Marked text</a></li>
+                            <li class=""><a class="" href="#thypography-deleted-text">Deleted text</a></li>
+                            <li class=""><a class="" href="#thypography-underlined-text">Underlined text</a></li>
+                            <li class=""><a class="" href="#thypography-small-text">Small text</a></li>
+                            <li class=""><a class="" href="#thypography-small-text">Bold</a></li>
+                            <li class=""><a class="" href="#thypography-small-text">Italics</a></li>
+                            <li class=""><a class="" href="#thypography-small-text">Addresses</a></li>
+                            <li class=""><a class="" href="#thypography-small-text">Lists</a></li>
+                        </ul> 
+					</article>
+				</div>
+                <div>
+					<input id="ac-3" name="accordion-1" type="radio">
+					<label for="ac-3">Tables</label>
+					<article class="ac-links">
+						<ul class="nav-menu-droite">
+                            <li class=""><a class="" href="#control-table">Table</a></li>
+                        </ul>
+					</article>
+				</div>
+                <div>
+					<input id="ac-4" name="accordion-1" type="radio">
+					<label for="ac-4">Inputs</label>
+					<article class="ac-links">
+						<ul class="nav-menu-droite">
+                            <li class=""><a class="" href="#inputs-input">Input</a></li>
+                            <li class=""><a class="" href="#inputs-textarea">Textarea</a></li>
+                            <li class=""><a class="" href="#inputs-basic-block">Basic block</a></li>
+                            <li class=""><a class="" href="#inputs-basic-list">List</a></li>
+                            <li class=""><a class="" href="#inputs-file-input">File input</a></li>
+                        </ul>
+					</article>
+				</div>
+				<div>
+					<input id="ac-5" name="accordion-1" type="radio">
+					<label for="ac-5">Buttons</label>
+					<article class="ac-links">
+						<ul class="nav-menu-droite">
+                            <li class=""><a class="" href="#buttons-tags">Button tags</a></li>
+                            <li class=""><a class="" href="#buttons-sizes">Sizes</a></li>
+                            <li class=""><a class="" href="#buttons-basic-button">Basic Button</a></li>
+                            <li class=""><a class="" href="#buttons-3D">Button 3D</a></li>
+                            <li class=""><a class="" href="#buttons-icons">Icons</a></li>
+                            <li class=""><a class="" href="#buttons-pagination">Pagination</a></li>
+                            <li class=""><a class="" href="#buttons-radio">Radio</a></li>
+                            <li class=""><a class="" href="#buttons-checkBoxes">CheckBoxes</a></li>
+                            <li class=""><a class="" href="#buttons-switch-button">Switch button</a></li>
+                        </ul>
+					</article>
+				</div>
+				<div>
+					<input id="ac-6" name="accordion-1" type="radio">
+					<label for="ac-6">Control</label>
+					<article class="ac-links">
+						<ul class="nav-menu-droite">
+                            <li class=""><a class="" href="#control-selects">Selects</a></li>
+                            <li class=""><a class="" href="#control-navbar">navbar</a></li>
+                            <li class=""><a class="" href="#control-accordion">Accordion</a></li>
+                            <li class=""><a class="" href="#control-attractive-rounded-input">Attractive Rounded input</a></li>
+                        </ul> 
+					</article>
+				</div>
             <br>
             <a href="#top" class="back-to-top"> Back to top </a>
 		</nav> 

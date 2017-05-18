@@ -43,3 +43,4 @@ btnCopy.addEventListener( 'click', function(){
 	document.execCommand( 'copy' );
 	return false;
 } );
+
