@@ -1,3 +1,4 @@
+.darkbo html, html.darkbo { font :   66% "Roboto Regular";}
 .v4-tease {
 	display: block;
     padding: 15px 20px;
@@ -95,11 +96,35 @@ h3:not(.not) {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.bs-callout-warning h4 {
+    color: #a44852;
+}
 .bs-callout-default {
     border-left: 5px solid #11a880;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.bs-callout-default h4 {
+    color: #11a880;
+}
+.bs-callout-danger {
+    border-left: 5px solid #ce4844;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.bs-callout-danger h4 {
+    color: #ce4844;
+}
+.bs-callout-info {
+   border-left: 5px solid #1b809e;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+.bs-callout-info h4 {
+    color: #1b809e;
 }
 #menu-accordeon {
     padding: 0;

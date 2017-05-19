@@ -2,10 +2,9 @@
 .darkbo html, html.darkbo { font :   62.5% "Roboto Regular";}
 .darkbo h1, h1.darkbo, .darkbo h2, h2.darkbo, .darkbo h3, h3.darkbo, .darkbo h4, h4.darkbo, .darkbo h5, h5.darkbo, .darkbo h6, h6.darkbo, .darkbo p, p.darkbo, .darkbo a, a.darkbo, .darkbo label, label.darkbo, .darkbo span, span.darkbo, .darkbo small, small.darkbo {font-family: "Roboto Regular" !important;}
 .darkbo body, body.darkbo { font : 1.4rem "Roboto Regular"; } /* =14px */
-.darkbo .form-control, .form-control.darkbo, .darkbo figure pre, pre.darkbo {
+.darkbo .form-control, .form-control.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	color :#FFF;
-    text-transform: capitalize;
 	font :  1em "Roboto Regular";
 	border : 2px solid #272B42;
     -moz-border-radius : 5px;
@@ -57,7 +56,17 @@
 .darkbo input:-ms-input-placeholder {  
     color : white !important;  
 }
-.darkbo .form-group, .form-group.darkbo{
+form .darkbo .form-group{
+    
+}
+#focusedInput {
+    outline: 0;
+    border-color: rgba(82,168,236,.8);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+    background-image : linear-gradient(90deg, #FFF, #FFF)!important;
+    color: #A1A9BF;
+}
+.darkbo .form-group.list, .form-group .list.darkbo {
 	padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
@@ -68,12 +77,15 @@
     border : 2px solid #414968;
     border-radius: 4px;
 }
-.darkbo .form-horizontal {
+.darkbo .form-group.list .btn-primary-3d, .form-group .list.darkbo .btn-primary-3d {
+    display: block;
+}
+.darkbo .form-horizontal.scroll, .form-horizontal.darkbo.scroll {
     height: 200px;
     overflow: scroll;
     overflow-x: hidden;
 }
-.darkbo .form-horizontal a:hover {
+.darkbo .form-horizontal.scroll a:hover, .form-horizontal.darkbo.scroll a:hover {
     text-decoration: none;
     color: #488abc;
 }
@@ -90,13 +102,12 @@
     font-size: 1.25rem;
     font-weight: 700;
     font :  1em "Roboto Regular";
-    color: #a44852;
+    color: #414968;
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
-    padding: 0.625rem 1.25rem;
 }
 .darkbo .box .form-control:focus, .box .form-control.darkbo:focus + label,
 .darkbo .box .form-control.has-focus + label, .box .form-control.darkbo.has-focus + label {
@@ -114,28 +125,21 @@
 .darkbo .box .form-control:focus + label, .box .form-control.darkbo:focus + label
 .darkbo .box .form-control.has-focus + label, .box .form-control.darkbo.has-focus + label
 .darkbo .box .form-control + label:hover, .box .form-control.darkbo + label:hover {
-    color: #8c3844;
+    color: #414968;
 }
 
 /*********************Bouttons**********************/
 
 .darkbo .btn, .btn.darkbo {
-	border: none;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: none;
 	cursor: pointer;
 	letter-spacing: 1px;
 	font-weight: 400;
-	outline: none;
 	position: relative;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 .darkbo .btn-3d, .btn-3d.darkbo {
-	display: block;
 	outline: 1px solid transparent;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
@@ -177,7 +181,7 @@
 	transform-origin: 0% 100%;
 	transform: rotateX(90deg);
 }
-.darkbo .btn-3d-1.btn-default-3d:hover, .btn-3d-1.btn-default-3d.darkbo:hover {
+.darkbo .btn-3d-1.btn-primary-3d:hover, .btn-3d-1.btn-primary-3d.darkbo:hover {
 	background: #999;
     color: #FFF;
 	-webkit-transform-origin: 50% 100%;
@@ -189,40 +193,38 @@
 	transform-origin: 50% 100%;
 	transform: rotateX(-90deg) translateY(100%);
 }
-.darkbo .btn-default, .btn-default.darkbo {
+.darkbo .btn-primary, .btn-primary.darkbo {
 	font :  1em "Roboto Regular";
 	color: #FFF;
 	background-color: #32c4c4;
-	border: none;
+	border: 2px solid #32c4c4;
     overflow: hidden;
     position: relative;
     transition-duration: 0.4s;
 }
-.darkbo .btn-default:hover, .btn-default.darkbo:hover {
+.darkbo .btn-primary:hover, .btn-primary.darkbo:hover {
 	background-color: #21a39f;
 	color: #FFF;
 	font :  1em "Roboto Regular";
-	border: none;
+    border: 2px solid #21a39f;
 }
-.darkbo .btn-default:after, .btn-default.darkbo:after {
+.darkbo .btn-primary:after, .btn-primary.darkbo:after {
 	content: "";
     background: #f1f1f1;
     display: block;
     position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
     margin-left: -1.5em !important;
     margin-top: -120%;
     opacity: 0;
     transition: all 0.8s;
 }
-.darkbo .btn-default:active:after, .btn-default.darkbo:active:after {
+.darkbo .btn-primary:active:after, .btn-primary.darkbo:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
 }
-.darkbo .btn-default:focus, .btn-default.darkbo:focus {
+.darkbo .btn-primary:focus, .btn-primary.darkbo:focus {
 	background-color: #32c4c4;
 	color: #FFF;
 }
@@ -250,15 +252,14 @@
 	background: rgba( 164, 72, 82, 0);
 	color: #A44852;
 	border: solid 2px #A44852;
-	padding: 1em 1.5em;
     transition-duration: 0.4s;
 }
-.darkbo .btn-warning span, .btn-warning.darkbo span {
+.darkbo .btn-warning, .btn-warning.darkbo {
   	font :  1em "Roboto Regular";
   	display: inline-block;
   	position: relative;
 }
-.darkbo .btn-warning span:after, .btn-warning.darkbo span:after {
+.darkbo .btn-warning:after, .btn-warning.darkbo:after {
   	position: absolute;
   	opacity: 0;
   	top: 0;	
@@ -268,10 +269,10 @@
 	background: rgba( 164, 72, 82, 1);
 	border: solid 2px #A44852;
 }
-.darkbo .btn-warning:hover span, .btn-warning.darkbo:hover span {
+.darkbo .btn-warning:hover, .btn-warning.darkbo:hover {
   	color: #FFF;
 }
-.darkbo .btn-warning:hover span:after, .btn-warning.darkbo:hover span:after {
+.darkbo .btn-warning:hover:after, .btn-warning.darkbo:hover:after {
   	opacity: 1;
   	right: 0;
 }
@@ -286,16 +287,16 @@
     color: #A44852;
 }
 .darkbo .btn-success, .btn-success.darkbo {
-	background: rgba( 13, 110, 178, 0);
+	background: rgba( 13, 110, 178, 1);
 	font :  1em "Roboto Regular";
 	border: solid 2px #0d6eb2;
-    color: #0d6eb2;
+    color: #FFF;
     transition-duration: 0.4s;
 }
 .darkbo .btn-success:hover, .btn-success.darkbo:hover {
-	background: rgba( 13, 110, 178, 1);
+	background: rgba( 13, 110, 178, 0);
 	border: solid 2px #0d6eb2;
-	color: #FFF;
+	color: #0d6eb2;
 }
 .darkbo .btn-success:focus:active, .btn-success.darkbo:focus:active {
 	background-color: #0d6eb2;
@@ -309,7 +310,7 @@
 	font :  1em "Roboto Regular";
 	color: #FFF;
 	background-color: #D60000;
-	border: none;
+	border : 2px solid #D60000;
     overflow: hidden;
     position: relative;
     transition-duration: 0.4s;
@@ -318,7 +319,7 @@
 	background-color: #A82720;
 	color: #FFF;
 	font :  1em "Roboto Regular";
-	border: none;
+    border : 2px solid #A82720;
 }
 .darkbo .btn-danger:after, .btn-danger.darkbo:after {
 	content: "";
@@ -352,6 +353,7 @@
   width: 20px;
   height: 20px;
   padding: 4px;
+    margin-right: 5px !important;
   text-align: center;
   background: #191919;
   background: -webkit-linear-gradient(top, #414968 0%, #272b42 100%);
@@ -370,13 +372,18 @@
   appearance: none;
   outline:none;
   box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.2);
+    
 }
 
 .darkbo .toggle:hover, .toggle.darkbo:hover {
     cursor: pointer;
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.3);
 }
-
+.darkbo .toggle:disabled, .toggle.darkbo:disabled {
+    box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.1);
+    cursor: not-allowed;
+    opacity: 0.9;
+}
 .darkbo .toggle:checked, .toggle.darkbo:checked {
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.4);
 }
@@ -417,6 +424,9 @@
 	color: #219ab5;
     overflow: auto;
     padding-bottom: 0;
+}
+.darkbo pre.pre-scrollable.pre-bg, pre.pre-scrollable.pre-bg.darkbo {
+    background-image : linear-gradient(90deg, #272B42, #414968);
 }
 .darkbo .pagination a, .pagination.darkbo a {
 	background-image : linear-gradient(90deg, #272B42, #414968);
@@ -570,8 +580,10 @@
     margin-top: -1px;
 }
 .darkbo .form-inline .form-group, .form-inline.darkbo .form-group {
-	border-bottom: 2px solid #CCC;
 	padding: 10px;
+}
+.darkbo .form-horizontal .form-group {
+    margin-right: 0;
 }
 .darkbo .input-group-addon.add, .input-group-addon.add.darkbo {
     background-image : linear-gradient(90deg, #FFF, #FFF);
@@ -579,6 +591,9 @@
     border-radius: 20px 0 0 20px;
     padding: 0 .5rem 0 1rem;
     border-right: 2px;
+}
+.darkbo .form-inline .form-group .control-label {
+    margin-right: 10px;
 }
 .darkbo .input-group-addon.remove, .input-group-addon.remove.darkbo {
     background-image : linear-gradient(90deg, #FFF, #FFF);
@@ -855,21 +870,6 @@
     transform: rotateX(180deg);
 }
 /************** MODAL/POPUP **************/
-.darkbo .button-popup, .button-popup.darkbo {
-    padding: 10px;
-    color: #FFF;
-    background: #219ab5;
-    font-weight: 600;
-    border: 2px solid #219ab5;
-    border-radius: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-.darkbo .button-popup:hover, .button-popup.darkbo:hover {
-    background: #FFF;
-    color: #219ab5;
-}
 .darkbo .overlay, .overlay.darkbo {
     position: fixed;
     top: 0;
@@ -971,4 +971,7 @@
       transform: scale(1);
       transform:  rotate(0deg) ;
   }
+}
+.table-striped {
+    background-color: red;
 }

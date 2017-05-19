@@ -8,7 +8,7 @@
 
 ;( function ( document, window, index )
 {
-	var inputs = document.querySelectorAll( '.box .dark' );
+	var inputs = document.querySelectorAll( '.box' );
 	Array.prototype.forEach.call( inputs, function( input )
 	{
 		var label	 = input.nextElementSibling,
