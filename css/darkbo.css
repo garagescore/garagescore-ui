@@ -2,6 +2,9 @@
 .darkbo html, html.darkbo { font :   62.5% "Roboto Regular";}
 .darkbo h1, h1.darkbo, .darkbo h2, h2.darkbo, .darkbo h3, h3.darkbo, .darkbo h4, h4.darkbo, .darkbo h5, h5.darkbo, .darkbo h6, h6.darkbo, .darkbo p, p.darkbo, .darkbo a, a.darkbo, .darkbo label, label.darkbo, .darkbo span, span.darkbo, .darkbo small, small.darkbo {font-family: "Roboto Regular" !important;}
 .darkbo body, body.darkbo { font : 1.4rem "Roboto Regular"; } /* =14px */
+body {
+    background-image : linear-gradient(90deg, #272B42, #414968);
+}
 .darkbo .form-control, .form-control.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
 	color :#FFF;
@@ -24,13 +27,11 @@
 }
 .darkbo .form-control:focus, .form-control.darkbo:focus {
 	background-image: linear-gradient(0deg, #FFF, #FFF);
+    color: #A1A9BF;
 }
 .darkbo select:focus {
     background-image : linear-gradient(90deg, #272B42, #414968)!important;
     color: #FFF !important;
-}
-.darkbo .form-control:focus, form-control.darkbo:focus {
-    color: #A1A9BF;
 }
 .darkbo input:focus::-webkit-input-placeholder {
     color : #A1A9BF !important;
@@ -55,9 +56,6 @@
 } 
 .darkbo input:-ms-input-placeholder {  
     color : white !important;  
-}
-form .darkbo .form-group{
-    
 }
 #focusedInput {
     outline: 0;
@@ -974,4 +972,61 @@ form .darkbo .form-group{
 }
 .table-striped {
     background-color: red;
+}
+
+/*******ADDDS**********/
+
+
+.darkbo .page-header + div {
+    background: #FFF;
+    border-radius: 5px; 
+    padding: 2rem;
+    color: #A1A9BF;
+}
+.darkbo .page-header + div > div > h3 {
+    color: #CCC;
+    padding-left: 2rem;
+    font-weight: 600;
+}
+.gs-darkbo-billing-main-wrapper {
+    padding: 2rem;
+    background: #FFF;
+    height: auto;
+}
+.gs-darkbo-billing-top-show-nonbillable {
+    padding-left: 0 !important;
+}
+.tab-selector + div {
+    background: #FFF;
+    border-radius: 5px; 
+    padding: 2rem; 
+    margin-bottom: 2rem;
+}
+.tab-selector + div label {
+    color: #A1A9BF;
+}
+.darkbo .form-group input, .darkbo .form-group select {
+	background-image : linear-gradient(90deg, #272B42, #414968);
+	color :#FFF;
+	font :  1em "Roboto Regular";
+	border : 2px solid #272B42;
+    -moz-border-radius : 5px;
+	-webkit-border-radius : 5px;
+	-o-border-radius : 5px;
+}
+.darkbo .form-group input:focus {
+	background-image: linear-gradient(0deg, #FFF, #FFF);
+    color: #A1A9BF;
+}
+.darkbo #garage-edit > .toprow {
+    background: #FFF;
+    border-radius: 5px; 
+    padding: 2rem;
+    color: #A1A9BF;
+}
+.darkbo .table th {
+    background-image : linear-gradient(90deg, #CCC, #CCC);
+}
+.darkbo .gs-darkbo-billing-main-title {
+    color: #A1A9BF;
 }
