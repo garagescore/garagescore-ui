@@ -830,16 +830,17 @@ body {
     font-weight: bold;
     line-height: 3;
     cursor: pointer;
+    padding-right: 1rem;
 }
 .darkbo .acordeon-content, .acordeon-content.darkbo {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    background-color: rgba(65, 73, 104, 0.3);
-    color: #FFF;
-    -webkit-transition: max-height .5s;
-    -o-transition: max-height .5s;
-    transition: max-height .5s;
+    background-color: #eee;
+    color: #A1A9BF;
+    -webkit-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
     -webkit-transition: opacity .7s;
     -o-transition: opacity .7s;
     transition: opacity .7s;
@@ -850,7 +851,8 @@ body {
 }
 /* :checked */
 .darkbo .inp-acordeon:checked ~ .acordeon-content, .inp-acordeon.darkbo:checked ~ .acordeon-content  {
-    max-height: 10em;
+    max-height: 30em;
+    overflow: auto;
     opacity: 1;
 }
 /* Icon */
@@ -1005,8 +1007,26 @@ body {
     background: #FFF;
     height: auto;
     margin-top: 5vh;
+    border-radius: 5px;  
+}
+.darkbo .page-header + div, .darkbo .page-header + .instructions + div {
+    padding: 2rem;
+    background: #FFF;
+    color: #A1A9BF !important;
     border-radius: 5px;
-    
+}
+.darkbo .table-responsive {
+    padding: 4rem;
+    background: #FFF;
+    color: #A1A9BF !important;
+    border-radius: 5px;
+}
+#app > .col-md-9 {
+    background: #FFF;
+    color: #A1A9BF !important;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 .gs-darkbo-billing-top-show-nonbillable {
     padding-left: 0 !important;
@@ -1031,35 +1051,32 @@ body {
 	-o-border-radius : 5px;;
 }
 .darkbo .form-group input:focus, .darkbo textarea:focus {
-	background-image: linear-gradient(0deg, #FFF, #FFF) !important;
+	background-image: linear-gradient(0deg, #eee, #eee) !important;
     color: #A1A9BF !important;
 }
 .darkbo #garage-edit > .toprow {
     color: #FFF;
 }
-.darkbo #garage-edit > .toprow input, .darkbo #garage-edit > .toprow select {
-    background-image: linear-gradient(0deg, #FFF, #FFF) !important;
+.darkbo #garage-edit > .toprow input, .darkbo #garage-edit > .toprow select, .darkbo .page-header select, darkbo .page-header input {
+    background-image: linear-gradient(0deg, #eee, #eee) !important;
     color: #A1A9BF !important;   
 }
-th {
-    display: inline-block;
-}
 tbody { 
-    display: block; 
+    display: block;
     max-height: 500px; 
     overflow: auto;
 } 
 .darkbo .table thead {
     background-image : linear-gradient(90deg, rgba(204,204,204,0.3), rgba(204,204,204,0.3));
 }
-.darkbo .gs-darkbo-billing-main-title {
+.darkbo h1 {
     color: #A1A9BF;
 }
 .btn-success[disabled]:active {
     background: red;
 }
 .darkbo .table input, .darkbo .table select {
-    background-image: linear-gradient(0deg, #FFF, #FFF) !important;
+    background-image: linear-gradient(0deg, #eee, #eee) !important;
     color: #A1A9BF !important;
 }
 .darkbo .container-block, .container-block.darkbo  {
@@ -1070,7 +1087,7 @@ tbody {
 }
 ::-webkit-scrollbar {
     width: 12px;
-     -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
+    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
