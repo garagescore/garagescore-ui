@@ -3,7 +3,14 @@
 .darkbo h1, h1.darkbo, .darkbo h2, h2.darkbo, .darkbo h3, h3.darkbo, .darkbo h4, h4.darkbo, .darkbo h5, h5.darkbo, .darkbo h6, h6.darkbo, .darkbo p, p.darkbo, .darkbo a, a.darkbo, .darkbo label, label.darkbo, .darkbo span, span.darkbo, .darkbo small, small.darkbo {font-family: "Roboto Regular" !important;}
 .darkbo body, body.darkbo { font : 1.4rem "Roboto Regular"; } /* =14px */
 body {
-    background-image : linear-gradient(90deg, #272B42, #414968);
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #414968 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000 0%,#414968 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000 0%,#414968 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#414968',GradientType=0 ); /* IE6-9 */
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    background-size:100% auto;
 }
 .darkbo .form-control, .form-control.darkbo {
 	background-image : linear-gradient(90deg, #272B42, #414968);
@@ -381,6 +388,11 @@ body {
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.1);
     cursor: not-allowed;
     opacity: 0.9;
+}
+.darkbo .btn[disabled] {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: .65;
 }
 .darkbo .toggle:checked, .toggle.darkbo:checked {
     box-shadow: 0px 0px 4px 4px rgba(33, 154, 181, 0.4);
@@ -977,11 +989,11 @@ body {
 /*******ADDDS**********/
 
 
-.darkbo .page-header + div {
-    background: #FFF;
-    border-radius: 5px; 
+#content {
     padding: 2rem;
-    color: #A1A9BF;
+    background: #FFF;
+    color: #A1A9BF !important;
+    border-radius: 5px;
 }
 .darkbo .page-header + div > div > h3 {
     color: #CCC;
@@ -992,6 +1004,9 @@ body {
     padding: 2rem;
     background: #FFF;
     height: auto;
+    margin-top: 5vh;
+    border-radius: 5px;
+    
 }
 .gs-darkbo-billing-top-show-nonbillable {
     padding-left: 0 !important;
@@ -1001,32 +1016,68 @@ body {
     border-radius: 5px; 
     padding: 2rem; 
     margin-bottom: 2rem;
+    color: #A1A9BF !important;
 }
 .tab-selector + div label {
     color: #A1A9BF;
 }
-.darkbo .form-group input, .darkbo .form-group select {
-	background-image : linear-gradient(90deg, #272B42, #414968);
-	color :#FFF;
+.darkbo .form-group input, .darkbo select, .darkbo .form-control input, .darkbo textarea {
+	background-image : linear-gradient(90deg, #272B42, #414968) !important;
+	color : #FFF !important;
 	font :  1em "Roboto Regular";
 	border : 2px solid #272B42;
-    -moz-border-radius : 5px;
-	-webkit-border-radius : 5px;
-	-o-border-radius : 5px;
+    -moz-border-radius : 5px ;
+	-webkit-border-radius : 5px ;
+	-o-border-radius : 5px;;
 }
-.darkbo .form-group input:focus {
-	background-image: linear-gradient(0deg, #FFF, #FFF);
-    color: #A1A9BF;
+.darkbo .form-group input:focus, .darkbo textarea:focus {
+	background-image: linear-gradient(0deg, #FFF, #FFF) !important;
+    color: #A1A9BF !important;
 }
 .darkbo #garage-edit > .toprow {
-    background: #FFF;
-    border-radius: 5px; 
-    padding: 2rem;
-    color: #A1A9BF;
+    color: #FFF;
 }
-.darkbo .table th {
-    background-image : linear-gradient(90deg, #CCC, #CCC);
+.darkbo #garage-edit > .toprow input, .darkbo #garage-edit > .toprow select {
+    background-image: linear-gradient(0deg, #FFF, #FFF) !important;
+    color: #A1A9BF !important;   
+}
+th {
+    display: inline-block;
+}
+tbody { 
+    display: block; 
+    max-height: 500px; 
+    overflow: auto;
+} 
+.darkbo .table thead {
+    background-image : linear-gradient(90deg, rgba(204,204,204,0.3), rgba(204,204,204,0.3));
 }
 .darkbo .gs-darkbo-billing-main-title {
     color: #A1A9BF;
+}
+.btn-success[disabled]:active {
+    background: red;
+}
+.darkbo .table input, .darkbo .table select {
+    background-image: linear-gradient(0deg, #FFF, #FFF) !important;
+    color: #A1A9BF !important;
+}
+.darkbo .container-block, .container-block.darkbo  {
+    background: #FFF;
+    color: #A1A9BF;
+    padding: 2rem; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+     -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 10px rgba(204,204,204,1);
 }
