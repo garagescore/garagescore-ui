@@ -34,13 +34,6 @@
 	});
 }( document, window, 0 ));
 
-var toCopy  = document.getElementById( 'to-copy' ),
-    btnCopy = document.getElementById( 'copy' );
 
-btnCopy.addEventListener( 'click', function(){
-    toCopy.document.getElementById("pre");
-    alert(toCopy);
-	document.execCommand( 'copy' );
-	return false;
-} );
+
 
